@@ -119,8 +119,8 @@ jobs:
           $unins = (Get-ChildItem "$env:LOCALAPPDATA\Programs\QueenBee\unins*.exe" | Select-Object -First 1).FullName
           Start-Process -FilePath $unins -ArgumentList '/VERYSILENT','/SUPPRESSMSGBOXES','/NORESTART' -Wait
           if (-not $ok) { throw "the installed exe did not answer /api/ping" }
-      - name: Attest where the files were built (public repository only; private ones need a paid plan)
-        if: startsWith(github.ref, 'refs/tags/v') && !github.event.repository.private
+      - name: Attest where the files were built (public repository only)
+        if: startsWith(github.ref, 'refs/tags/v') && github.repository_visibility == 'public'
         uses: actions/attest-build-provenance@v2
         with:
           subject-path: |
@@ -173,7 +173,7 @@ jobs:
           v=$(python -c "import queenbee; print(queenbee.__version__)")
           ditto -c -k --keepParent dist/QueenBee.app "dist/QueenBee-$v-macos.zip"
       - name: Attest where the file was built (public repository only)
-        if: startsWith(github.ref, 'refs/tags/v') && !github.event.repository.private
+        if: startsWith(github.ref, 'refs/tags/v') && github.repository_visibility == 'public'
         uses: actions/attest-build-provenance@v2
         with:
           subject-path: dist/QueenBee-*-macos.zip
@@ -220,7 +220,7 @@ jobs:
           v=$(python -c "import queenbee; print(queenbee.__version__)")
           tar -C dist -czf "dist/QueenBee-$v-linux-x86_64.tar.gz" QueenBee
       - name: Attest where the file was built (public repository only)
-        if: startsWith(github.ref, 'refs/tags/v') && !github.event.repository.private
+        if: startsWith(github.ref, 'refs/tags/v') && github.repository_visibility == 'public'
         uses: actions/attest-build-provenance@v2
         with:
           subject-path: dist/QueenBee-*-linux-x86_64.tar.gz
