@@ -1,0 +1,29 @@
+# The test suite on Windows, where QueenBee runs. Every test mocks the agents and the host: no Claude Code or Codex is needed.
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    # Windows is where QueenBee ships today; macOS and Linux run the same suite against the POSIX code paths (pty, launchers,
+    # the install window), which were written without a Mac at hand.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: python -m pip install --quiet -e . pytest
+      - name: Test
+        env:
+          QUEENBEE_STATE_DIR: ${{ runner.temp }}/queenbee-state
+        run: python -m pytest -q tests

@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="queenbee.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QueenBee</title>
+<link rel="stylesheet" href="vendor/xterm.css">
+<link rel="stylesheet" href="mother.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-queen" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M8 14.6l-.7-4 2.6 1.7L12 8.6l2.1 3.7 2.6-1.7-.7 4zM8.3 16.2h7.4"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M8.5 10.2h7M8.5 13.4h4.2"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><circle cx="12" cy="12" r="2.6"/></symbol>
+  <symbol id="i-task" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M8.6 12.3l2.3 2.3 4.5-4.8"/></symbol>
+  <symbol id="i-limits" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M8.3 10h7.4M8.3 14h7.4"/><circle cx="10.6" cy="10" r="1.1"/><circle cx="13.6" cy="14" r="1.1"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M9.6 16.6V7.6h5.4l-1 2.3 1 2.3H9.6"/></symbol>
+  <symbol id="i-board" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><circle cx="12" cy="12" r="1.2"/><path d="M9.2 9.2a4 4 0 0 0 0 5.6M14.8 9.2a4 4 0 0 1 0 5.6"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M7.4 12h2.1l1.3-3.1 2.4 6.2 1.3-3.1h2.1"/></symbol>
+  <symbol id="i-broom" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M14.6 8l-2.7 4.6M9.3 13.2h5.2l-.9 3.2H8.4z"/></symbol>
+  <symbol id="i-plan" viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M9.6 15.6v-6.2M9.6 12.4h4.8M14.4 12.4v3.2"/></symbol>
+</defs></svg>
+<header class="top">
+  <div class="brand">
+    <img class="bee" src="queenbee.png" alt="" width="30" height="30">
+    <div>
+      <div class="name">QueenBee</div>
+      <div class="sub">Queen bees plan, worker bees do the work.</div>
+    </div>
+  </div>
+  <div class="hw" id="hw" aria-label="Machine"></div>
+  <div class="status">
+    <button type="button" id="bell" class="bell" title="Notifications" aria-label="Notifications">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 16.5v-5a5.5 5.5 0 0 1 11 0v5l1.5 1.8h-14z"/><path d="M10 20.3a2.1 2.1 0 0 0 4 0"/></svg>
+      <span class="bell-n" id="bell-n" hidden></span></button>
+    <span id="host" class="pill">connecting…</span>
+    <span id="stamp" class="stamp"></span>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button type="button" class="tab on" data-view="hive">Hive</button>
+  <button type="button" class="tab" data-view="report">Report</button>
+  <button type="button" class="tab" data-view="decisions">Decisions <span class="tab-count" id="decisions-count"></span></button>
+  <button type="button" class="tab" data-view="gpu" id="gpu-tab" hidden>GPU <span class="tab-count" id="gpu-count"></span></button>
+</nav>
+
+<main class="layout">
+  <aside class="queens-panel">
+    <!-- The first time: three steps, ticked off as they happen; gone when all three are done, or when dismissed. -->
+    <section class="start-card" id="start-card" hidden>
+      <div class="start-head"><span>Get started</span><button type="button" id="start-dismiss" class="ghost small" title="Hide this">✕</button></div>
+      <ol class="start-steps">
+        <li id="start-agent"><span class="start-tick"></span><span class="start-text">Install an agent and sign in: <b>Agents on this computer</b>, below.</span></li>
+        <li id="start-demo"><span class="start-tick"></span><span class="start-text">Watch a team work: <b>Try a demo</b>.</span></li>
+        <li id="start-queen"><span class="start-tick"></span><span class="start-text">Your own job: <b>Create a queen bee</b>, open her, tell her what to get done.</span></li>
+      </ol>
+    </section>
+    <button type="button" id="create-queen" class="create-queen">+ Create a queen bee</button>
+    <button type="button" id="demo-btn" class="ghost demo-btn" title="Copies a small project to ~/QueenBeeDemo: a queen and three workers build one program whose parts must agree">&#9654; Try a demo: three workers, one program</button>
+    <div id="queen-list" class="queen-list"></div>
+    <div class="muted side-note">Click a queen or a worker on the map to open it. Hover a queen to add
+      a worker bee; hover a worker to make it a queen or stop it.</div>
+    <details class="setup" id="setup">
+      <summary>Agents on this computer <span class="muted" id="setup-sum"></span></summary>
+      <div id="setup-rows" class="setup-rows"></div>
+      <div class="muted setup-note">QueenBee drives the agents you already have: it opens each in a real terminal and uses
+        your own account. Install or sign in below; this card updates by itself.</div>
+    </details>
+    <details class="setup more" id="more">
+      <summary>More</summary>
+      <div class="more-rows">
+        <button type="button" id="create-free" class="ghost demo-btn" title="One agent on the map that belongs to no queen: you answer its questions yourself">+ Create a free worker</button>
+      </div>
+    </details>
+  </aside>
+
+  <section class="views">
+    <section class="view" data-view="hive">
+      <section class="card graph-card" id="graph-card">
+        <div class="graph-head">
+          <h2>Hive <span class="hint" id="graph-meta"></span></h2>
+          <div class="graph-tools">
+            <button type="button" id="zoom-out" class="ghost small" title="Zoom out">−</button>
+            <span id="zoom-level" class="zoom-level">100%</span>
+            <button type="button" id="zoom-in" class="ghost small" title="Zoom in">+</button>
+            <button type="button" id="zoom-fit" class="ghost small" title="Fit every queen in view (or double-click the background)">Fit</button>
+          </div>
+        </div>
+        <div class="graph-wrap"><div class="graph" id="graph">
+          <svg class="edges" id="edges" aria-hidden="true"></svg>
+          <div class="nodes" id="nodes"></div>
+        </div></div>
+        <div class="legend">
+          <span class="lg gpu">On the GPU</span><span class="lg agent">Working</span>
+          <span class="lg done">Done</span><span class="lg failed">Failed / needs you</span>
+          <span class="lg queued">Waiting</span><span class="lg detached">Let go of</span>
+        </div>
+      </section>
+      <section class="board" id="board" hidden>
+        <div class="board-head">
+          <h2>Jobs <span class="hint" id="board-meta"></span></h2>
+          <div class="board-notes" id="board-notes"></div>
+        </div>
+        <div class="tiles" id="tiles"></div>
+      </section>
+    </section>
+
+    <section class="view" data-view="report" hidden>
+      <section class="card empty-state">
+        <svg class="ph-ico big" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-task"/></svg>
+        <div class="es-title">No report yet</div>
+        <div class="es-text">When a queen's team stops, she writes a completion report here: what each worker did, what the checks said, how long it took and what it cost. Start a team from the Hive.</div>
+        <button type="button" class="es-go" data-go="hive">Open the Hive</button>
+      </section>
+      <section class="card completion-card" id="completion-card" hidden>
+        <h2>The queen's completion report <span class="hint" id="completion-hint"></span></h2>
+        <div id="completion-body"></div>
+      </section>
+      <section class="card report" id="report-card">
+        <h2>Report <span class="hint" id="report-path"></span></h2>
+        <div id="report" class="md"><div class="empty">The selected queen writes its report when its plan ends.</div></div>
+      </section>
+      <section class="card findings-card" id="findings-card" hidden>
+        <h2>Findings <span class="hint">what the workers found out, kept in .queenbee/FINDINGS.md and handed to the next team. Confirm one that still holds, retire one that does not.</span></h2>
+        <ul id="findings" class="findings"></ul>
+      </section>
+      <section class="card results" id="results-card" hidden>
+        <h2>Results <span class="hint" id="results-hint"></span></h2>
+        <div id="results"></div>
+      </section>
+      <section class="card timeline-card">
+        <h2>Timeline <span class="hint">when each worker ran; the one that ends last sets the finish time</span></h2>
+        <div id="timeline"><div class="empty">No workers yet.</div></div>
+        <section class="card changes-card">
+        <h2>Changes <span class="tab-count" id="changes-count"></span> <span class="hint">what the workers changed since the plan started, file by file</span></h2>
+        <div id="changes"><div class="empty">No plan yet.</div></div>
+      </section>
+
+    </section>
+
+    </section>
+
+    <section class="view" data-view="decisions" hidden>
+      <section class="card empty-state">
+        <svg class="ph-ico big" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-flag"/></svg>
+        <div class="es-title">No decisions yet</div>
+        <div class="es-text">Every permission question a worker asks is listed here with how the queen answered: approved, declined, or left to you.</div>
+        <button type="button" class="es-go" data-go="hive">Open the Hive</button>
+      </section>
+      <section class="card approvals" id="approvals-card">
+        <h2>The Queen's decisions <span class="hint">answers it gave workers so nothing waits; anything outside a worker's scope is left to you</span></h2>
+        <div id="approvals"><div class="empty">No decisions yet.</div></div>
+      </section>
+    </section>
+
+    <section class="view" data-view="gpu" hidden>
+      <section class="card jobs">
+        <h2>GPU jobs <span class="hint">packed under 90% of memory and compute; resumable ones save and step out when it fills</span></h2>
+        <div id="jobs"><div class="empty">No GPU jobs on this machine right now.</div></div>
+      </section>
+    </section>
+  </section>
+</main>
+
+<!-- A queen or a worker opened from the map: its chat, large. -->
+<div class="focus" id="focus" hidden>
+  <div class="focus-panel" role="dialog" aria-modal="true">
+    <div class="focus-head">
+      <div class="focus-title" id="focus-title"></div>
+      <div class="focus-actions" id="focus-actions"></div>
+      <button type="button" id="focus-close" class="ghost small" title="Back to the map (Esc)">✕</button>
+    </div>
+
+    <div class="focus-body" id="focus-queen" hidden>
+      <section class="pcard" id="queen-card">
+        <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-queen"/></svg>
+          <div class="ph-tt"><div class="ph-t">Queen</div>
+            <div class="ph-s muted" id="queen-agent"></div></div>
+        </div>
+        <div class="pb">
+          <label>Name <input type="text" id="queen-name" class="queen-name" maxlength="40"></label>
+          <label>Queen's model
+            <select id="queen-model">
+              <option value="sonnet">Sonnet 5.5</option>
+              <option value="opus">Opus 5.5</option>
+              <option value="codex">Codex</option>
+            </select></label>
+        </div>
+        <div class="pb">
+          <label class="grow">Project folder
+            <input type="text" id="proj-folder" list="project-paths-top" placeholder="C:\Users\...\my-app: where the queen and her workers work"></label>
+        </div>
+        <div class="director-line" id="director-line"></div>
+      </section>
+      <details class="pcard planner-box" id="planner-box" open>
+       <summary class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plan"/></svg><span class="ph-tt"><span class="ph-t">The job</span><span class="ph-s">Tell the queen what to get done. She plans the worker bees and starts them, within your limits. Talk it through with her first if you like: her terminal opens right here.</span></span></summary>
+       <section class="instruct" id="instruct">
+        <!-- The way in: looks like the first line of a conversation, and one click opens her terminal right here. -->
+        <button type="button" class="chat-entry" id="qterm-open">
+          <span class="chat-entry-dot" aria-hidden="true"></span>
+          <span class="chat-entry-text">Talk the job through with the queen</span>
+          <span class="chat-entry-go">Start chatting <span aria-hidden="true">&rarr;</span></span>
+        </button>
+        <div class="pnote muted" id="qterm-note"></div>
+        <div class="qterm-box" id="qterm-box" hidden></div>
+        <div class="pb" id="qplan-row" hidden>
+          <span class="muted">The queen wrote a plan.</span>
+          <button type="button" id="qplan-start">Start with this plan</button>
+        </div>
+        <textarea id="instruction" rows="3" placeholder="Or type the job here: what to build or fix, and what &quot;done&quot; means (a command that must pass is best)."></textarea>
+        <input type="text" id="folder" class="folder" list="project-paths-top" hidden
+          placeholder="Project folder, e.g. C:\Users\...\my-app">
+        <datalist id="project-paths-top"></datalist>
+        <div class="row">
+          <button type="button" id="plan-btn" class="primary">Plan and start workers</button>
+          <span id="plan-note" class="muted">She opens the workers on her own, within your limits. Prefer to place each worker yourself? Use + Worker bee above.</span>
+        </div>
+       </section>
+      </details>
+      <section class="card plan" id="plan-card" hidden>
+        <h2>Plan <span class="hint" id="plan-meta"></span></h2>
+        <div id="plan-notes" class="notes"></div>
+        <div id="plan-jobs"></div>
+        <datalist id="project-paths"></datalist>
+        <div id="prep"></div>
+        <div class="row">
+          <button type="button" id="prepare-btn">Prepare</button>
+          <button type="button" id="start-btn">Start</button>
+          <button type="button" id="discard-btn" class="ghost">Discard</button>
+          <span id="start-note" class="muted">Prepare: she inspects each project read-only and writes exact work orders, so cheaper workers can run them.</span>
+        </div>
+      </section>
+      <section class="pcard queen-task" id="queen-task">
+        <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-task"/></svg>
+          <div class="ph-tt"><div class="ph-t">Task</div>
+            <div class="ph-s" id="qt-hint">what you asked this queen to get done</div></div>
+          <div class="ph-act">
+            <button type="button" id="qt-more" class="ghost small" hidden>Show all</button>
+            <button type="button" id="qt-edit" class="ghost small">Edit</button></div>
+        </div>
+        <div class="qt-text clamp" id="qt-text"></div>
+        <form id="qt-form" hidden>
+          <textarea id="qt-area" rows="7" maxlength="4000"
+            placeholder="Write the task in your own words. It stays here, and the queen reads it each time she looks in."></textarea>
+          <div class="qt-btns"><span class="muted" id="qt-count"></span>
+            <button type="button" id="qt-cancel" class="ghost small">Cancel</button>
+            <button type="submit" class="small">Save</button></div>
+        </form>
+      </section>
+      <section class="pcard answers-card" id="answers-card">
+        <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-eye"/></svg>
+          <div class="ph-tt"><div class="ph-t">Worker prompts</div>
+            <div class="ph-s" id="answers-hint"></div></div>
+          <div class="ph-act"><div class="seg" id="answers-seg" role="group" aria-label="Who answers the workers' prompts">
+            <button type="button" class="ghost small" data-mode="queen">The queen answers</button>
+            <button type="button" class="ghost small" data-mode="me">I answer</button></div></div>
+        </div>
+      </section>
+      <section class="pcard">
+        <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pulse"/></svg>
+          <div class="ph-tt"><div class="ph-t">Activity</div>
+            <div class="ph-s">what the queen and her workers did, newest at the bottom</div></div>
+        </div>
+        <div id="queen-log" class="queen-log"></div>
+      </section>
+      <details class="pcard advanced" id="advanced">
+        <summary class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-limits"/></svg><span class="ph-tt"><span class="ph-t">Settings and tools</span><span class="ph-s">Limits, delivery check, planning options, Beekeeper, hive board, clean. The defaults work; open this when you want to change them.</span></span></summary>
+        <div class="advanced-body">
+      <form class="pcard" id="limits-form">
+        <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-limits"/></svg>
+          <div class="ph-tt"><div class="ph-t">Limits</div>
+            <div class="ph-s limits-note" id="limits-note">At a limit the queen starts no new worker; running ones go on.</div></div>
+          <div class="ph-act"><button type="submit" class="ghost small">Save</button></div>
+        </div>
+        <div class="pb">
+          <label>Workers <input type="number" min="0" step="1" data-limit="workers" placeholder="∞"></label>
+          <label>Tokens (millions) <input type="number" min="0" step="1" data-limit="budget_m" placeholder="∞"></label>
+          <label>RAM GB <input type="number" min="0" step="0.5" data-limit="ram_gb" placeholder="∞"></label>
+          <label>CPU % <input type="number" min="0" step="5" data-limit="cpu_pct" placeholder="∞"></label>
+          <label>VRAM GB <input type="number" min="0" step="0.5" data-limit="vram_gb" placeholder="∞"></label>
+        </div>
+      </form>
+      <form class="pcard" id="check-form">
+        <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-flag"/></svg>
+          <div class="ph-tt"><div class="ph-t">Delivery check</div>
+            <div class="ph-s limits-note" id="check-note">Optional. One result for the whole delivery.</div></div>
+          <div class="ph-act"><button type="submit" class="ghost small">Save</button></div>
+        </div>
+        <div class="pb">
+          <input type="text" id="check-cmd" class="grow" placeholder="when all workers are done she runs, e.g.: python -m unittest discover -s tests -t .">
+        </div>
+      </form>
+        <div class="pcard" id="plan-options">
+          <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plan"/></svg>
+            <div class="ph-tt"><div class="ph-t">Planning options</div>
+              <div class="ph-s">How she runs a job you type above.</div></div>
+          </div>
+          <div class="pb">
+            <label>Team <select id="strategy" title="How the queen runs it: you decide, not the queen">
+              <option value="multi">Multi-agent</option>
+              <option value="single">Single agent</option>
+              <option value="auto">Queen decides</option>
+            </select></label>
+            <label class="check" title="Each worker gets its own git branch and folder; the queen merges a finished worker into main and keeps the merge only if the project's checks stay green. Makes the folder a git repository if it is not one.">
+              <input type="checkbox" id="branches"> Own branch per worker (git)
+            </label>
+          </div>
+          <div id="roles" class="roles"></div>
+        </div>
+      <section class="pcard" id="beekeeper">
+        <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-eye"/></svg>
+          <div class="ph-tt"><div class="ph-t">Beekeeper</div>
+            <div class="ph-s" id="bk-sub">Watches the queen: does she keep to QUEEN.md, the README and the plan? Checks by itself every few minutes while a team works.</div></div>
+          <div class="ph-act"><button type="button" id="bk-ask" class="ghost">Check now</button></div>
+        </div>
+        <div class="pb">
+          <label>Agent
+            <select id="bk-agent"><option value="">Codex (default)</option></select></label>
+          <label>Model
+            <select id="bk-model"><option value="">default</option></select></label>
+          <label class="grow">Extra rules file(s)
+            <input type="text" id="bk-rules" maxlength="400" placeholder="e.g. BEEKEEPER.md, docs\rules.md (QUEEN.md, README.md and the plan are always read)"></label>
+        </div>
+        <div class="qterm-box" id="bk-term" hidden></div>
+        <div class="bk-body" id="bk-body" hidden></div>
+      </section>
+      <form class="pcard board-say" id="board-form">
+        <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-board"/></svg>
+          <div class="ph-tt"><div class="ph-t">Hive board</div>
+            <div class="ph-s limits-note" id="board-note">Workers post findings here too; you see them in the stream above.</div></div>
+          <div class="ph-act"><button type="submit" class="ghost small">Say</button></div>
+        </div>
+        <div class="pb">
+          <label>To <select id="board-to"><option value="all">all workers</option></select></label>
+          <input type="text" id="board-text" class="grow" maxlength="700" placeholder="Tell the hive something: every addressed worker reads it between steps">
+        </div>
+      </form>
+      <section class="pcard clean-card" id="clean-card">
+        <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-broom"/></svg>
+          <div class="ph-tt"><div class="ph-t" id="clean-title">Clean queen</div>
+            <div class="ph-s" id="clean-sub">Closes her chat and forgets her plan and workers, so you start fresh. Plan files stay on disk.</div></div>
+          <div class="ph-act"><button type="button" id="remove-queen" class="ghost danger" hidden>Clean queen</button></div>
+        </div>
+      </section>
+        </div>
+      </details>
+    </div>
+
+    <div class="focus-body" id="focus-worker" hidden>
+      <section class="pcard wk-task" id="wk-task">
+        <div class="ph"><svg class="ph-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-task"/></svg>
+          <div class="ph-tt"><div class="ph-t" id="wk-title">Task</div><div class="ph-s" id="wk-meta"></div></div>
+          <div class="ph-act"><button type="button" id="wk-more" class="ghost small" hidden>Show all</button></div></div>
+        <div class="wk-goal clamp" id="wk-goal"></div>
+        <div class="wk-extra" id="wk-extra"></div>
+      </section>
+      <div id="refused-slot"></div>
+      <div id="fork-slot"></div>
+      <div class="term-tabs" id="term-tabs" hidden></div>
+      <div class="term-host" id="term-host"><div class="term-empty" id="term-empty"></div></div>
+      <div class="say" id="say-row">
+        <textarea id="say" rows="2"></textarea>
+        <button type="button" id="say-btn">Send</button>
+      </div>
+      <div class="muted say-hint" id="say-hint"></div>
+      <div id="convo" hidden></div>
+    </div>
+  </div>
+</div>
+
+<!-- Creating a queen, adding a worker: a few questions. -->
+<div class="focus ask-dialog" id="dialog" hidden>
+  <form class="dialog-panel" id="dialog-form">
+    <h2 id="dialog-title"></h2>
+    <label id="dlg-name-row">Name <input type="text" id="dlg-name" maxlength="40" placeholder="e.g. Web app"></label>
+    <label id="dlg-desc-row">The task you give this queen (optional; she and you can read it later)
+      <textarea id="dlg-desc" rows="3" maxlength="4000" placeholder="e.g. Fix the failing tests and add the missing validation to the signup form."></textarea></label>
+    <label id="dlg-mode-row">The queen's job
+      <select id="dlg-mode">
+        <option value="guard" selected>I add the worker bees myself; she looks in on them, settles disagreements, approves and checks</option>
+        <option value="planner">She splits my instruction into worker bees herself, then does the same</option>
+      </select>
+    </label>
+    <label id="dlg-text-row"><span id="dlg-text-label">Instruction</span>
+      <textarea id="dlg-text" rows="4" required></textarea></label>
+    <label id="dlg-folder-row">Folder <input type="text" id="dlg-folder" list="project-paths-top" required
+      placeholder="C:\Users\...\my-app"></label>
+    <label id="dlg-check-row">Done when this passes (optional)
+      <input type="text" id="dlg-check" placeholder="a command the queen runs herself, e.g. python -m pytest tests -q"></label>
+    <div class="dlg-row" id="dlg-queen-model-row">
+      <label>Queen's model
+        <select id="dlg-queen-model">
+          <option value="sonnet" selected>Sonnet 5.5</option>
+          <option value="opus">Opus 5.5 (strongest, about twice the cost per token)</option>
+          <option value="codex" disabled>Codex (planned: not yet available as a queen)</option>
+        </select>
+      </label>
+    </div>
+    <div class="dlg-row">
+      <label>Agent <select id="dlg-agent"></select></label>
+      <label>Model <select id="dlg-model"></select></label>
+    </div>
+    <div class="dlg-row" id="dlg-limits">
+      <label>Workers at most <input type="number" min="0" step="1" id="dlg-workers" placeholder="no limit"></label>
+      <label>Token budget (millions) <input type="number" min="0" step="1" id="dlg-budget" placeholder="no limit"></label>
+    </div>
+    <div class="dlg-btns">
+      <button type="button" class="ghost" id="dlg-cancel">Cancel</button>
+      <button type="submit" id="dlg-ok"></button>
+    </div>
+    <div class="error" id="dlg-error"></div>
+  </form>
+</div>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="dialog-panel sheet-panel" role="alertdialog" aria-modal="true">
+    <h2 id="sheet-title"></h2>
+    <div class="sheet-text" id="sheet-text"></div>
+    <input type="text" id="sheet-input" hidden>
+    <div class="dlg-btns">
+      <button type="button" class="ghost" id="sheet-cancel">Cancel</button>
+      <button type="button" id="sheet-ok">OK</button>
+    </div>
+  </div>
+</div>
+
+<!-- Kept for the page's older code paths; not shown. -->
+<div hidden><div id="agents"></div><span id="agents-count"></span>
+  <section id="convo-card"><span id="convo-title"></span><span id="convo-state"></span>
+    <button type="button" id="convo-close"></button></section></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<div class="bell-panel" id="bell-panel" hidden>
+  <div class="bp-head"><span>Notifications</span><span class="muted">newest first</span></div>
+  <div class="bp-list" id="bell-list"></div>
+</div>
+<script src="vendor/xterm.js"></script>
+<script src="vendor/xterm-addon-fit.js"></script>
+<script src="mother.js"></script>
+</body>
+</html>

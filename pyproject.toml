@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "queenbee"
+version = "0.1.4"
+description = "Run Claude Code and Codex as one team, and get the job finished: a queen runs your coding agents (Claude Code, Codex, Gemini, Kimi and more) against one acceptance test, or you answer their prompts while she keeps watch."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.11"
+dependencies = [
+    "psutil",
+    "pywinpty; sys_platform == 'win32'",
+    "ptyprocess; sys_platform != 'win32'",
+]
+
+[project.optional-dependencies]
+# QueenBee in its own native window instead of a browser app window.
+window = ["pywebview", "pystray", "Pillow"]
+
+[project.scripts]
+queenbee = "queenbee.mother.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["queenbee*"]
+
+[tool.setuptools.package-data]
+queenbee = ["assets/*", "mother/static/*", "mother/static/vendor/*",
+    "mother/demo_free/*", "mother/demo_free/notes/*", "mother/demo_free/tests/*"]

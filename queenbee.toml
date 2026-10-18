@@ -1,0 +1,46 @@
+# QueenBee configuration. Copy into QUEENBEE_CONFIG_DIR to override, or point
+# QUEENBEE_CONFIG at this file.
+
+[queenbee]
+interval_s = 5.0
+host_bin = ""
+source_id = "queenbee"
+show_pane_rows = true
+show_workspace_rows = true
+
+# Extra command-line substrings that mark a process as a local model runner.
+# Anything matched here is treated as a real VRAM consumer for the headroom
+# rules, on top of the built-in list (ollama, vllm, llama.cpp, ...).
+local_model_hints = []
+
+[thresholds]
+vram_warn_pct = 80.0
+vram_crit_pct = 92.0
+ram_warn_pct = 85.0
+ram_crit_pct = 90.0
+swap_warn_pct = 25.0
+cpu_warn_pct = 90.0
+gpu_temp_warn_c = 84.0
+
+# Free VRAM below this means "do not start another local-model agent".
+# Size it to the smallest model you actually run.
+local_agent_headroom_mb = 2048.0
+
+# Consecutive breaching samples before a sustained-pressure warning fires.
+sustain_ticks = 3
+
+# Decision layer. Softest first:
+#   off      nothing
+#   advise   decides and records, changes nothing            (default)
+#   queue    also holds a launch until the card has room
+#   act      also suspends a runaway job for CPU contention
+#
+# Note measured on real hardware: suspending a process does NOT free its
+# memory. VRAM and RAM stay held. Only ending a process returns them, and
+# QueenBee will not do that on its own -- it recommends and you decide.
+[decisions]
+mode = "advise"
+launch_headroom_mb = 1536.0
+cpu_pressure_pct = 92.0
+cpu_pressure_ticks = 4
+cooldown_s = 60.0

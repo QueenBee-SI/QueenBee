@@ -1,0 +1,11 @@
+.venv/
+dist/
+build/
+__pycache__/
+*.pyc
+*.egg-info/
+.queenbee/
+*.log
+*.spec
+.pytest_cache/
+mother.toml
