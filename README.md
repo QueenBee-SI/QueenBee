@@ -20,15 +20,46 @@ one map, gives them one job, and puts a queen in charge: she splits the work, br
 prompts by a rule you can read, and runs your test at the end. You can watch every terminal live, type into any of
 them, or go and do something else.
 
-![Real runs, sped up: three projects on one map, each a Sonnet queen with a Codex worker and two Claude Haiku workers; the view closes in on one queen while her workers go from working to done and she delivers, then pulls back to the whole hive](docs/assets/queenbee-hive.gif)
+![One real run, six minutes in twelve seconds: the queen plans, three workers (two Claude Code, one Codex) build their parts, she sends one integration fix, and the whole project's check passes with 0 prompts to the person](docs/assets/queenbee-run.gif)
+
+*One real run, six minutes in twelve seconds: the queen plans, two Claude Code workers and one Codex worker build their
+parts, she sends one integration fix, and the project's own check passes. 30 permission prompts answered by the queen, 0 by you.*
+
+## The same job three ways
+
+MiniDB, a small SQL engine, nine features, 154 checks. The same words to each arm; a stand-in person answers every
+prompt about 15 seconds after it appears, so the times include the waiting.
+
+| | Time | Checks | Prompts to a person | Tokens |
+|---|---|---|---|---|
+| One Claude Sonnet 5.5 agent alone | 13:41 | 154 / 154 | 23 | 3.23 M |
+| Three Sonnet 5.5 agents side by side, no queen | 13:43 | **153 / 154** | 57 | 5.61 M |
+| Queen + Sonnet 5.5, Codex, Sonnet 5.5 | **6:20** | 154 / 154 | **0** | 4.34 M |
+
+Side by side, all three agents said "done" and nobody ran the whole check; the queen's team met the same seam, her
+check caught it, and one more worker closed it. The queen's row is the best of six runs (the others took 7:01 to 9:59
+and all finished); one job family; the stand-in says yes to everything. [All the runs, and what the numbers do not
+say.](docs/results.md) [The files to run it yourself.](benchmarks/README.md)
+
+## Get started
+
+1. **Install.** Grab the [latest release](https://github.com/QueenBee-SI/QueenBee/releases/latest): a Windows installer,
+   a macOS app or a Linux tarball. Or run it [from source](docs/install.md). You need Claude Code or Codex installed and
+   signed in; QueenBee has no account of its own and starts the agents as you.
+2. **Try the demo.** One click, and three agents build a small program together on your own account. A few minutes.
+   [What to look at while it runs.](docs/free-demo.md)
+3. **Give it a real job.** Create a queen, pick a folder, type one sentence with what "done" means:
+   *"Add CSV export to the reports page. Done means `pytest tests/` passes."*
+
+The first start on Windows and macOS shows the usual warning for an unsigned program; the [install guide](docs/install.md)
+walks through it in two clicks and shows how to check the download's checksum.
 
 ## Why people like it
 
 **It finishes the job.** You say what "done" means, usually a test command. When every worker is in, the queen runs
 it. If the parts do not meet, she sends one more worker to join them and runs it again. Her report keeps what she
-checked apart from what a worker merely said. On our test job, three agents side by side stopped one check short
-with every agent saying done; the queen's team ran the check and finished. [The numbers.](docs/results.md) When a
-run ends, one click copies its result card (check, prompts, workers, fixes, time, tokens) for a pull request or a post.
+checked apart from what a worker merely said. When a run ends, one click copies its result card (check, prompts,
+workers, fixes, time, tokens) for a pull request or a post.
 
 **Claude and Codex, one team.** Both work from the same brief on the same job, each on the part that suits it. Any agent
 installed on your computer can take any seat, including the queen's.
@@ -43,21 +74,10 @@ whose file has changed since is marked as possibly out of date.
 **Every agent in one place.** Claude Code, Codex, Gemini CLI, Kimi, OpenCode, Cursor Agent, Mistral Vibe and Grok Build,
 each in a real terminal. One glance tells you who is working, who is done and who needs you.
 
+![Three projects on one map at once, sped up: each a queen with her workers; the view closes in on one queen as her workers finish and she delivers](docs/assets/queenbee-hive.gif)
+
 **Your tokens, in view and under a limit.** Every worker's use is counted as it works. Give a queen a budget and a number
 of workers at most, and she stops starting new work when she reaches it.
-
-## Get started
-
-1. **Install.** Grab the [latest release](https://github.com/QueenBee-SI/QueenBee/releases/latest): a Windows installer,
-   a macOS app or a Linux tarball. Or run it [from source](docs/install.md). You need Claude Code or Codex installed and
-   signed in; QueenBee has no account of its own and starts the agents as you.
-2. **Try the demo.** One click, and three agents build a small program together on your own account. A few minutes.
-   [What to look at while it runs.](docs/free-demo.md)
-3. **Give it a real job.** Create a queen, pick a folder, type one sentence with what "done" means:
-   *"Add CSV export to the reports page. Done means `pytest tests/` passes."*
-
-The first start on Windows and macOS shows the usual warning for an unsigned program; the [install guide](docs/install.md)
-walks through it in two clicks and shows how to check the download's checksum.
 
 ## How it works
 
