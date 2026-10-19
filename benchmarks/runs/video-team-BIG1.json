@@ -1,0 +1,77 @@
+{
+ "lane": "team",
+ "n": "BIG1",
+ "task": "23",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 8,
+  "cost_usd": 0.134,
+  "tokens": 66853,
+  "summary": "W1, W2 and W3 are done and passed acceptance. W4 is working on the failing whole-package check `python check_minidb3.py`, and nothing needs a word from me now.",
+  "next_in": 76,
+  "interval_s": 120.0,
+  "busy": false,
+  "wakes": 8,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "delay": null,
+ "claude": "sonnet",
+ "codex": "gpt-5.6-terra",
+ "folder": "~/QueenBeeDemo/big-1",
+ "seconds": 694,
+ "final": "219 of 219 checks pass",
+ "tokens": 6788162,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Frontend: syntax, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, savepoints",
+   "done",
+   "codex",
+   "gpt-5.6-terra"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   4,
+   "integration fix 1",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 1,
+ "costs": {
+  "planner": {
+   "tokens": 27487,
+   "cost_usd": 0.12527490000000002
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 66853,
+   "cost_usd": 0.1343
+  }
+ }
+}

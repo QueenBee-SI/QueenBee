@@ -1,0 +1,113 @@
+{
+ "run_id": "H1015-2354-t3short-1",
+ "arm": "t3short",
+ "switches": {
+  "TASK": "3",
+  "BRIEF": "short",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T00:31:10",
+ "result": {
+  "lane": "team",
+  "n": "H1015-2354-t3short-1",
+  "task": "3",
+  "brief": "short",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.039,
+   "tokens": 21454,
+   "summary": "W3 is done and passed acceptance. W1 and W2 are still working. W3 blames the remaining check failures on windows.py, which is W1's file.",
+   "next_in": 66,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 3,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video3-8",
+  "seconds": 263,
+  "final": "219 of 219 checks pass",
+  "tokens": 5427496,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Frontend: parser, AST, functions",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, savepoints",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 0,
+  "costs": {
+   "planner": {
+    "tokens": 23983,
+    "cost_usd": 0.1093335
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 21454,
+    "cost_usd": 0.0394
+   }
+  }
+ },
+ "ended_at": "2026-10-16T00:36:50",
+ "wall_s": 341,
+ "headline": {
+  "seconds": 263,
+  "final": "219 of 219 checks pass",
+  "tokens": 5427496,
+  "questions": 0,
+  "verify_rounds": 0,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.039,
+   "tokens": 21454,
+   "summary": "W3 is done and passed acceptance. W1 and W2 are still working. W3 blames the remaining check failures on windows.py, which is W1's file.",
+   "next_in": 66,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 3,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

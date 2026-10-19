@@ -1,0 +1,122 @@
+{
+ "run_id": "H1016-0650-short-3",
+ "arm": "short",
+ "switches": {
+  "TASK": "2",
+  "BRIEF": "short",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "9cdcccfddbe5b1761bf6a2d2544540355883f6e5",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T06:59:36",
+ "result": {
+  "lane": "team",
+  "n": "H1016-0650-short-3",
+  "task": "2",
+  "brief": "short",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 5,
+   "cost_usd": 0.074,
+   "tokens": 51170,
+   "summary": "W1-W3 are done and their acceptance checks passed. W4 is fixing the delivery check, which fails on a window ORDER BY query (check 109); I pointed W4 at the parser/expr window handling.",
+   "next_in": 72,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 6,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video-57",
+  "seconds": 436,
+  "final": "154 of 154 checks pass",
+  "tokens": 6014431,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Parser, expressions, windows",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, DDL, views",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side, docs",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    4,
+    "integration fix 1",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 1,
+  "costs": {
+   "planner": {
+    "tokens": 27222,
+    "cost_usd": 0.1208495
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 51170,
+    "cost_usd": 0.0742
+   }
+  }
+ },
+ "ended_at": "2026-10-16T07:08:02",
+ "invalid": "",
+ "logs": "runs/hermetic-logs/H1016-0650-short-3",
+ "wall_s": 507,
+ "headline": {
+  "seconds": 436,
+  "final": "154 of 154 checks pass",
+  "tokens": 6014431,
+  "questions": 0,
+  "verify_rounds": 1,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 5,
+   "cost_usd": 0.074,
+   "tokens": 51170,
+   "summary": "W1-W3 are done and their acceptance checks passed. W4 is fixing the delivery check, which fails on a window ORDER BY query (check 109); I pointed W4 at the parser/expr window handling.",
+   "next_in": 72,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 6,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "lane": "solo",
+ "n": "BIG2",
+ "task": "23",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": null,
+ "delay": 1.0,
+ "claude": "sonnet",
+ "codex": "gpt-5.6-terra",
+ "folder": "~/QueenBeeDemo/big-5",
+ "seconds": 895,
+ "final": "219 of 219 checks pass",
+ "tokens": 5581456,
+ "questions": 31,
+ "jobs": [
+  [
+   1,
+   "One agent",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": null,
+ "verify_rounds": null,
+ "costs": {}
+}

@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- `docs/results.md`: what we measured (one agent alone, three side by side, three with the queen; the
+  findings experiments; a Claude + Codex team), with the film's runs, and `benchmarks/` with the job, the drivers and
+  every cited run's raw result, so the numbers can be rerun.
+
 ## v0.1.4 (2026-10-18)
 
 The first release from this repository. QueenBee runs Claude Code and Codex as one team on one job, each agent in its

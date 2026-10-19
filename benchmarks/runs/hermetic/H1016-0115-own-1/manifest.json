@@ -1,0 +1,120 @@
+{
+ "run_id": "H1016-0115-own-1",
+ "arm": "own",
+ "switches": {
+  "TASK": "2",
+  "BRIEF": "short",
+  "READ_SCOPE": "own",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T04:13:49",
+ "result": {
+  "lane": "team",
+  "n": "H1016-0115-own-1",
+  "task": "2",
+  "brief": "short",
+  "read_scope": "own",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 7,
+   "cost_usd": 0.206,
+   "tokens": 353142,
+   "summary": "W4 is fixing the remaining integration failures. Check 109 depends on a parser change that W1 will never make, so I told W4 to make it.",
+   "next_in": 102,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 9,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video-46",
+  "seconds": 477,
+  "final": "154 of 154 checks pass",
+  "tokens": 6506548,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Parser, lexer, expressions, windows",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, DDL, views, FKs",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side, docs",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    4,
+    "integration fix 1",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 1,
+  "costs": {
+   "planner": {
+    "tokens": 27631,
+    "cost_usd": 0.12495150000000001
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 353142,
+    "cost_usd": 0.2063
+   }
+  }
+ },
+ "ended_at": "2026-10-16T04:23:02",
+ "wall_s": 553,
+ "headline": {
+  "seconds": 477,
+  "final": "154 of 154 checks pass",
+  "tokens": 6506548,
+  "questions": 0,
+  "verify_rounds": 1,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 7,
+   "cost_usd": 0.206,
+   "tokens": 353142,
+   "summary": "W4 is fixing the remaining integration failures. Check 109 depends on a parser change that W1 will never make, so I told W4 to make it.",
+   "next_in": 102,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 9,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

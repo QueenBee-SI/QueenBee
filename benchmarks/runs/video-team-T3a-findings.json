@@ -1,0 +1,66 @@
+{
+ "lane": "team",
+ "n": "T3a-findings",
+ "task": "3",
+ "brief": "findings",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 2,
+  "cost_usd": 0.032,
+  "tokens": 15192,
+  "summary": "W1 is done and passed acceptance. W2 is on savepoint tests and W3 is on tests and docs. W3 already has W2's CTAS routing message, and the delivery check is still waiting on that routing.",
+  "next_in": 35,
+  "interval_s": 120.0,
+  "busy": false
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video3-1",
+ "seconds": 294,
+ "final": "219 of 219 checks pass",
+ "tokens": 5884678,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Frontend: parser, AST, functions",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, savepoints",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 23654,
+   "cost_usd": 0.1060555
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 15192,
+   "cost_usd": 0.0324
+  }
+ }
+}

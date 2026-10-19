@@ -1,0 +1,919 @@
+{
+ "seed": 20261016,
+ "order": [
+  "wake#1",
+  "wake#2",
+  "t3find#2",
+  "timer#2",
+  "t3find#1",
+  "t3short#1",
+  "t3short#2",
+  "timer#1"
+ ],
+ "manifests": [
+  {
+   "run_id": "H1015-2354-wake-1",
+   "arm": "wake",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-15T23:54:24",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2354-wake-1",
+    "task": "2",
+    "brief": "findings",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 5,
+     "cost_usd": 0.066,
+     "tokens": 36690,
+     "summary": "W1 and W3 passed acceptance. W2 fails one persistence test, so I told it to rerun now that the executor exists and fix that test. The delivery check is still waiting.",
+     "next_in": 65,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 6,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-35",
+    "seconds": 553,
+    "final": "154 of 154 checks pass",
+    "tokens": 5360705,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side and docs",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 27570,
+      "cost_usd": 0.12434150000000001
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 36690,
+      "cost_usd": 0.0656
+     }
+    }
+   },
+   "ended_at": "2026-10-16T00:04:54",
+   "wall_s": 630,
+   "headline": {
+    "seconds": 553,
+    "final": "154 of 154 checks pass",
+    "tokens": 5360705,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 5,
+     "cost_usd": 0.066,
+     "tokens": 36690,
+     "summary": "W1 and W3 passed acceptance. W2 fails one persistence test, so I told it to rerun now that the executor exists and fix that test. The delivery check is still waiting.",
+     "next_in": 65,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 6,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1015-2354-wake-2",
+   "arm": "wake",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T00:04:54",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2354-wake-2",
+    "task": "2",
+    "brief": "findings",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.036,
+     "tokens": 20888,
+     "summary": "W1 done and accepted; W2 has written dml.py and is moving to tests, and W3 is designing the executor rewrite. The W2/W3 interface (dml.execute and the subquery callback) is agreed on the board, so I'm",
+     "next_in": 63,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-36",
+    "seconds": 310,
+    "final": "154 of 154 checks pass",
+    "tokens": 5096612,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views, FKs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 27220,
+      "cost_usd": 0.12086550000000001
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 20888,
+      "cost_usd": 0.0358
+     }
+    }
+   },
+   "ended_at": "2026-10-16T00:11:18",
+   "wall_s": 384,
+   "headline": {
+    "seconds": 310,
+    "final": "154 of 154 checks pass",
+    "tokens": 5096612,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.036,
+     "tokens": 20888,
+     "summary": "W1 done and accepted; W2 has written dml.py and is moving to tests, and W3 is designing the executor rewrite. The W2/W3 interface (dml.execute and the subquery callback) is agreed on the board, so I'm",
+     "next_in": 63,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1015-2354-t3find-2",
+   "arm": "t3find",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T00:11:18",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2354-t3find-2",
+    "task": "3",
+    "brief": "findings",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 2,
+     "cost_usd": 0.027,
+     "tokens": 14275,
+     "summary": "Hive is progressing: W1 parser/functions done, W2 storage done, W3 executor code written. AST names are agreed on the board, and the remaining work is tests and docs. Nothing needs a nudge yet.",
+     "next_in": 64,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 2,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-6",
+    "seconds": 256,
+    "final": "219 of 219 checks pass",
+    "tokens": 5771998,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Frontend: parser, AST, functions",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, savepoints",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 23814,
+      "cost_usd": 0.1076555
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 14275,
+      "cost_usd": 0.0273
+     }
+    }
+   },
+   "ended_at": "2026-10-16T00:16:53",
+   "wall_s": 334,
+   "headline": {
+    "seconds": 256,
+    "final": "219 of 219 checks pass",
+    "tokens": 5771998,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 2,
+     "cost_usd": 0.027,
+     "tokens": 14275,
+     "summary": "Hive is progressing: W1 parser/functions done, W2 storage done, W3 executor code written. AST names are agreed on the board, and the remaining work is tests and docs. Nothing needs a nudge yet.",
+     "next_in": 64,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 2,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1015-2354-timer-2",
+   "arm": "timer",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "off",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T00:16:53",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2354-timer-2",
+    "task": "2",
+    "brief": "findings",
+    "read_scope": "",
+    "interval": "",
+    "wake": "off",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.044,
+     "tokens": 22086,
+     "summary": "W1 and W3 are done and passed acceptance. W2 was blocked on W3's executor, which is now finished. W2 also has a test whose UNION widths don't match.",
+     "next_in": 39,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": false,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-37",
+    "seconds": 408,
+    "final": "154 of 154 checks pass",
+    "tokens": 6364626,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Lexer, parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views, FKs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side and docs",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 27678,
+      "cost_usd": 0.1254095
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 22086,
+      "cost_usd": 0.044
+     }
+    }
+   },
+   "ended_at": "2026-10-16T00:24:55",
+   "wall_s": 483,
+   "headline": {
+    "seconds": 408,
+    "final": "154 of 154 checks pass",
+    "tokens": 6364626,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.044,
+     "tokens": 22086,
+     "summary": "W1 and W3 are done and passed acceptance. W2 was blocked on W3's executor, which is now finished. W2 also has a test whose UNION widths don't match.",
+     "next_in": 39,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": false,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1015-2354-t3find-1",
+   "arm": "t3find",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T00:24:55",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2354-t3find-1",
+    "task": "3",
+    "brief": "findings",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 4,
+     "cost_usd": 0.054,
+     "tokens": 29789,
+     "summary": "W1 and W3 are done and passed acceptance. W2 is still working, and its upsert path breaks on CompositeIndex.pos, which is what blocks the delivery check.",
+     "next_in": 97,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 4,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-7",
+    "seconds": 297,
+    "final": "219 of 219 checks pass",
+    "tokens": 7072189,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Frontend: parser, AST, functions",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, savepoints",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor: ordering, CTEs, UPDATE FROM",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 24362,
+      "cost_usd": 0.1131355
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 29789,
+      "cost_usd": 0.0539
+     }
+    }
+   },
+   "ended_at": "2026-10-16T00:31:10",
+   "wall_s": 374,
+   "headline": {
+    "seconds": 297,
+    "final": "219 of 219 checks pass",
+    "tokens": 7072189,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 4,
+     "cost_usd": 0.054,
+     "tokens": 29789,
+     "summary": "W1 and W3 are done and passed acceptance. W2 is still working, and its upsert path breaks on CompositeIndex.pos, which is what blocks the delivery check.",
+     "next_in": 97,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 4,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1015-2354-t3short-1",
+   "arm": "t3short",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T00:31:10",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2354-t3short-1",
+    "task": "3",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.039,
+     "tokens": 21454,
+     "summary": "W3 is done and passed acceptance. W1 and W2 are still working. W3 blames the remaining check failures on windows.py, which is W1's file.",
+     "next_in": 66,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-8",
+    "seconds": 263,
+    "final": "219 of 219 checks pass",
+    "tokens": 5427496,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Frontend: parser, AST, functions",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, savepoints",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 23983,
+      "cost_usd": 0.1093335
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 21454,
+      "cost_usd": 0.0394
+     }
+    }
+   },
+   "ended_at": "2026-10-16T00:36:50",
+   "wall_s": 341,
+   "headline": {
+    "seconds": 263,
+    "final": "219 of 219 checks pass",
+    "tokens": 5427496,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.039,
+     "tokens": 21454,
+     "summary": "W3 is done and passed acceptance. W1 and W2 are still working. W3 blames the remaining check failures on windows.py, which is W1's file.",
+     "next_in": 66,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1015-2354-t3short-2",
+   "arm": "t3short",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T00:36:50",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2354-t3short-2",
+    "task": "3",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 5,
+     "cost_usd": 0.064,
+     "tokens": 36227,
+     "summary": "W1 and W3 are done and passed acceptance. W2 is still working on dml.py (RETURNING, CTAS) and the database.py savepoints. W3 may not have wired the CTAS routing.",
+     "next_in": 78,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 6,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-9",
+    "seconds": 352,
+    "final": "219 of 219 checks pass",
+    "tokens": 5785827,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Frontend: parser, ast, functions",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, savepoints",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 24404,
+      "cost_usd": 0.1135435
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 36227,
+      "cost_usd": 0.0641
+     }
+    }
+   },
+   "ended_at": "2026-10-16T00:44:01",
+   "wall_s": 430,
+   "headline": {
+    "seconds": 352,
+    "final": "219 of 219 checks pass",
+    "tokens": 5785827,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 5,
+     "cost_usd": 0.064,
+     "tokens": 36227,
+     "summary": "W1 and W3 are done and passed acceptance. W2 is still working on dml.py (RETURNING, CTAS) and the database.py savepoints. W3 may not have wired the CTAS routing.",
+     "next_in": 78,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 6,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1015-2354-timer-1",
+   "arm": "timer",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "off",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T00:44:01",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2354-timer-1",
+    "task": "2",
+    "brief": "findings",
+    "read_scope": "",
+    "interval": "",
+    "wake": "off",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 2,
+     "cost_usd": 0.04,
+     "tokens": 36621,
+     "summary": "W1 done and accepted; W2 finishing tests then docs; W3 has plan.py done and is starting the executor rewrite. The interfaces between them are agreed, and nothing is blocked.",
+     "next_in": 25,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": false,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-38",
+    "seconds": 309,
+    "final": "154 of 154 checks pass",
+    "tokens": 5825656,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Syntax, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, FKs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 28075,
+      "cost_usd": 0.1294155
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 36621,
+      "cost_usd": 0.0398
+     }
+    }
+   },
+   "ended_at": "2026-10-16T00:50:16",
+   "wall_s": 376,
+   "headline": {
+    "seconds": 309,
+    "final": "154 of 154 checks pass",
+    "tokens": 5825656,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 2,
+     "cost_usd": 0.04,
+     "tokens": 36621,
+     "summary": "W1 done and accepted; W2 finishing tests then docs; W3 has plan.py done and is starting the executor rewrite. The interfaces between them are agreed, and nothing is blocked.",
+     "next_in": 25,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": false,
+     "min_gap_s": 45.0
+    }
+   }
+  }
+ ]
+}

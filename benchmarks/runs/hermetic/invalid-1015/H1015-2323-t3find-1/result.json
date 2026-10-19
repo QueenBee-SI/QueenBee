@@ -1,0 +1,69 @@
+{
+ "lane": "team",
+ "n": "H1015-2323-t3find-1",
+ "task": "3",
+ "brief": "findings",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 3,
+  "cost_usd": 0.043,
+  "tokens": 22551,
+  "summary": "W1 and W2 are done and passed acceptance. W3 has the ast shapes and W2's RETURNING helper, and is running its checks, tests and docs. Nothing is blocked, so no message is needed.",
+  "next_in": 109,
+  "interval_s": 120.0,
+  "busy": false,
+  "wakes": 3,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video3-4",
+ "seconds": 244,
+ "final": "219 of 219 checks pass",
+ "tokens": 5513164,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Frontend: parser, ast, functions",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, savepoints",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 23795,
+   "cost_usd": 0.1074775
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 22551,
+   "cost_usd": 0.0431
+  }
+ }
+}

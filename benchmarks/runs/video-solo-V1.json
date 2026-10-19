@@ -1,0 +1,23 @@
+{
+ "lane": "solo",
+ "n": "V1",
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video-14",
+ "seconds": 671,
+ "final": "154 of 154 checks pass",
+ "tokens": 2958567,
+ "questions": 19,
+ "jobs": [
+  [
+   1,
+   "One agent",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": null,
+ "verify_rounds": null,
+ "costs": {}
+}

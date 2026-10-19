@@ -1,0 +1,69 @@
+{
+ "lane": "team",
+ "n": "H1016-0055-find-1",
+ "task": "2",
+ "brief": "findings",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 3,
+  "cost_usd": 0.036,
+  "tokens": 21048,
+  "summary": "W1 is done and W2 and W3 are working. W2 has published its dml.execute interface and W1 has published its parser shapes, and W3 has received both. I see no gaps to fix.",
+  "next_in": 66,
+  "interval_s": 120.0,
+  "busy": false,
+  "wakes": 3,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video-39",
+ "seconds": 373,
+ "final": "154 of 154 checks pass",
+ "tokens": 5337728,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Lexer, parser, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, FKs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side and docs",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 27495,
+   "cost_usd": 0.1236035
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 21048,
+   "cost_usd": 0.0365
+  }
+ }
+}

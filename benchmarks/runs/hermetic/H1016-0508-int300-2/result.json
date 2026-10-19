@@ -1,0 +1,76 @@
+{
+ "lane": "team",
+ "n": "H1016-0508-int300-2",
+ "task": "2",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "300",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 6,
+  "cost_usd": 0.09,
+  "tokens": 45684,
+  "summary": "W1-W3 done and accepted; W4 queued to fix integration failures in check_minidb.py, and the derived-table alias fix (check 109) is already assigned to W1. Nothing new to add.",
+  "next_in": 238,
+  "interval_s": 300.0,
+  "busy": false,
+  "wakes": 7,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video-54",
+ "seconds": 512,
+ "final": "154 of 154 checks pass",
+ "tokens": 6198836,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, expressions, functions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Storage, DML, DDL, docs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   4,
+   "integration fix 1",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 1,
+ "costs": {
+  "planner": {
+   "tokens": 27136,
+   "cost_usd": 0.1199895
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 45684,
+   "cost_usd": 0.0903
+  }
+ }
+}

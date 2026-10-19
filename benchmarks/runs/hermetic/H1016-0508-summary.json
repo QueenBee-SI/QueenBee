@@ -1,0 +1,470 @@
+{
+ "seed": 20261019,
+ "order": [
+  "full#2",
+  "full#1",
+  "int300#2",
+  "int300#1"
+ ],
+ "manifests": [
+  {
+   "run_id": "H1016-0508-full-2",
+   "arm": "full",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "full",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "cc6bd8fade59fcfe0d15aa97fc0cf9f7685496db",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T05:08:09",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0508-full-2",
+    "task": "2",
+    "brief": "full",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 4,
+     "cost_usd": 0.06,
+     "tokens": 30683,
+     "summary": "W1 and W2 are done and passed acceptance. W3 is still wiring the executor, and W2's database.py already calls dml.execute, so W3 needs no dml wiring. Nothing needs a message right now.",
+     "next_in": 77,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 5,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-52",
+    "seconds": 333,
+    "final": "154 of 154 checks pass",
+    "tokens": 5524813,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views, FKs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side and docs",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 27830,
+      "cost_usd": 0.1269415
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 30683,
+      "cost_usd": 0.06
+     }
+    }
+   },
+   "ended_at": "2026-10-16T05:14:57",
+   "wall_s": 408,
+   "headline": {
+    "seconds": 333,
+    "final": "154 of 154 checks pass",
+    "tokens": 5524813,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 4,
+     "cost_usd": 0.06,
+     "tokens": 30683,
+     "summary": "W1 and W2 are done and passed acceptance. W3 is still wiring the executor, and W2's database.py already calls dml.execute, so W3 needs no dml wiring. Nothing needs a message right now.",
+     "next_in": 77,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 5,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0508-full-1",
+   "arm": "full",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "full",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "cc6bd8fade59fcfe0d15aa97fc0cf9f7685496db",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T05:14:57",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0508-full-1",
+    "task": "2",
+    "brief": "full",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 5,
+     "cost_usd": 0.071,
+     "tokens": 37441,
+     "summary": "W1 and W3 are done and passed acceptance. W2 is testing the executor select side against the approved dml interface. No cross-worker conflicts are open.",
+     "next_in": 90,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 6,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-53",
+    "seconds": 315,
+    "final": "154 of 154 checks pass",
+    "tokens": 4666421,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, lexer, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Storage, DML, DDL, docs",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 27393,
+      "cost_usd": 0.1225595
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 37441,
+      "cost_usd": 0.0715
+     }
+    }
+   },
+   "ended_at": "2026-10-16T05:21:31",
+   "wall_s": 394,
+   "headline": {
+    "seconds": 315,
+    "final": "154 of 154 checks pass",
+    "tokens": 4666421,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 5,
+     "cost_usd": 0.071,
+     "tokens": 37441,
+     "summary": "W1 and W3 are done and passed acceptance. W2 is testing the executor select side against the approved dml interface. No cross-worker conflicts are open.",
+     "next_in": 90,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 6,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0508-int300-2",
+   "arm": "int300",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "300",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "cc6bd8fade59fcfe0d15aa97fc0cf9f7685496db",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T05:21:31",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0508-int300-2",
+    "task": "2",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "300",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 6,
+     "cost_usd": 0.09,
+     "tokens": 45684,
+     "summary": "W1-W3 done and accepted; W4 queued to fix integration failures in check_minidb.py, and the derived-table alias fix (check 109) is already assigned to W1. Nothing new to add.",
+     "next_in": 238,
+     "interval_s": 300.0,
+     "busy": false,
+     "wakes": 7,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-54",
+    "seconds": 512,
+    "final": "154 of 154 checks pass",
+    "tokens": 6198836,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, expressions, functions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Storage, DML, DDL, docs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      4,
+      "integration fix 1",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 1,
+    "costs": {
+     "planner": {
+      "tokens": 27136,
+      "cost_usd": 0.1199895
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 45684,
+      "cost_usd": 0.0903
+     }
+    }
+   },
+   "ended_at": "2026-10-16T05:31:17",
+   "wall_s": 585,
+   "headline": {
+    "seconds": 512,
+    "final": "154 of 154 checks pass",
+    "tokens": 6198836,
+    "questions": 0,
+    "verify_rounds": 1,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 6,
+     "cost_usd": 0.09,
+     "tokens": 45684,
+     "summary": "W1-W3 done and accepted; W4 queued to fix integration failures in check_minidb.py, and the derived-table alias fix (check 109) is already assigned to W1. Nothing new to add.",
+     "next_in": 238,
+     "interval_s": 300.0,
+     "busy": false,
+     "wakes": 7,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0508-int300-1",
+   "arm": "int300",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "300",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "cc6bd8fade59fcfe0d15aa97fc0cf9f7685496db",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T05:31:17",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0508-int300-1",
+    "task": "2",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "300",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 5,
+     "cost_usd": 0.071,
+     "tokens": 38568,
+     "summary": "W1 and W2 are done and passed acceptance. W3 is still writing tests and docs, and its interface with W2's dml is agreed. The delivery check hasn't run yet.",
+     "next_in": 283,
+     "interval_s": 300.0,
+     "busy": false,
+     "wakes": 6,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-55",
+    "seconds": 384,
+    "final": "154 of 154 checks pass",
+    "tokens": 5553263,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Lexer, parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views, FKs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side, docs",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 28081,
+      "cost_usd": 0.1294515
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 38568,
+      "cost_usd": 0.0711
+     }
+    }
+   },
+   "ended_at": "2026-10-16T05:38:47",
+   "wall_s": 450,
+   "headline": {
+    "seconds": 384,
+    "final": "154 of 154 checks pass",
+    "tokens": 5553263,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 5,
+     "cost_usd": 0.071,
+     "tokens": 38568,
+     "summary": "W1 and W2 are done and passed acceptance. W3 is still writing tests and docs, and its interface with W2's dml is agreed. The delivery check hasn't run yet.",
+     "next_in": 283,
+     "interval_s": 300.0,
+     "busy": false,
+     "wakes": 6,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  }
+ ]
+}

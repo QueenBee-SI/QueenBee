@@ -1,0 +1,464 @@
+{
+ "seed": 20261015,
+ "order": [
+  "t3find#1",
+  "timer#1",
+  "t3short#1",
+  "wake#1",
+  "t3short#2",
+  "t3find#2",
+  "wake#2",
+  "timer#2"
+ ],
+ "manifests": [
+  {
+   "run_id": "H1015-2323-t3find-1",
+   "arm": "t3find",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "bbea4438816868ecc1e17e2f217d8405e5003d9a",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-15T23:23:33",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2323-t3find-1",
+    "task": "3",
+    "brief": "findings",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.043,
+     "tokens": 22551,
+     "summary": "W1 and W2 are done and passed acceptance. W3 has the ast shapes and W2's RETURNING helper, and is running its checks, tests and docs. Nothing is blocked, so no message is needed.",
+     "next_in": 109,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-4",
+    "seconds": 244,
+    "final": "219 of 219 checks pass",
+    "tokens": 5513164,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Frontend: parser, ast, functions",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, savepoints",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 23795,
+      "cost_usd": 0.1074775
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 22551,
+      "cost_usd": 0.0431
+     }
+    }
+   },
+   "ended_at": "2026-10-15T23:28:46",
+   "wall_s": 313,
+   "headline": {
+    "seconds": 244,
+    "final": "219 of 219 checks pass",
+    "tokens": 5513164,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.043,
+     "tokens": 22551,
+     "summary": "W1 and W2 are done and passed acceptance. W3 has the ast shapes and W2's RETURNING helper, and is running its checks, tests and docs. Nothing is blocked, so no message is needed.",
+     "next_in": 109,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1015-2323-timer-1",
+   "arm": "timer",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "off",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "0d833e5b1808796a4461dedf67bfab783f75c3f2",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-15T23:28:46",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2323-timer-1",
+    "task": "2",
+    "brief": "findings",
+    "read_scope": "",
+    "interval": "",
+    "wake": "off",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.052,
+     "tokens": 43309,
+     "summary": "W1 and W3 had edits denied for going outside the project folder. W2's tests are blocked on the executor being mid-edit. AST names between W1 and W3 are not yet agreed.",
+     "next_in": 94,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": false,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-34",
+    "seconds": 363,
+    "final": "154 of 154 checks pass",
+    "tokens": 5715449,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side, docs",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 27503,
+      "cost_usd": 0.1236775
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 43309,
+      "cost_usd": 0.0521
+     }
+    }
+   },
+   "ended_at": "2026-10-15T23:35:51",
+   "wall_s": 425,
+   "headline": {
+    "seconds": 363,
+    "final": "154 of 154 checks pass",
+    "tokens": 5715449,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.052,
+     "tokens": 43309,
+     "summary": "W1 and W3 had edits denied for going outside the project folder. W2's tests are blocked on the executor being mid-edit. AST names between W1 and W3 are not yet agreed.",
+     "next_in": 94,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": false,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1015-2323-t3short-1",
+   "arm": "t3short",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "1422f7e9bfeee41b6d1b2032108c266c0594e7be",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-15T23:35:51",
+   "result": {
+    "lane": "team",
+    "n": "H1015-2323-t3short-1",
+    "task": "3",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 4,
+     "cost_usd": 0.056,
+     "tokens": 36908,
+     "summary": "W1 and W3 are done and passed acceptance. windows.py now handles Func.filter and GROUP_CONCAT, which fixes the W3 issue on checks 168 and 170. W2 is still working on DML and savepoints, and the delive",
+     "next_in": 90,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-5",
+    "seconds": 263,
+    "final": "219 of 219 checks pass",
+    "tokens": 5156612,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Frontend: parser, AST, functions",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, savepoints",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 24287,
+      "cost_usd": 0.1123855
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 36908,
+      "cost_usd": 0.0555
+     }
+    }
+   },
+   "ended_at": "2026-10-15T23:41:18",
+   "wall_s": 327,
+   "headline": {
+    "seconds": 263,
+    "final": "219 of 219 checks pass",
+    "tokens": 5156612,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 4,
+     "cost_usd": 0.056,
+     "tokens": 36908,
+     "summary": "W1 and W3 are done and passed acceptance. windows.py now handles Func.filter and GROUP_CONCAT, which fixes the W3 issue on checks 168 and 170. W2 is still working on DML and savepoints, and the delive",
+     "next_in": 90,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1015-2323-wake-1",
+   "arm": "wake",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "1422f7e9bfeee41b6d1b2032108c266c0594e7be",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-15T23:41:18",
+   "error": "the server did not answer"
+  },
+  {
+   "run_id": "H1015-2323-t3short-2",
+   "arm": "t3short",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "1422f7e9bfeee41b6d1b2032108c266c0594e7be",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-15T23:42:48",
+   "error": "the server did not answer"
+  },
+  {
+   "run_id": "H1015-2323-t3find-2",
+   "arm": "t3find",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "1422f7e9bfeee41b6d1b2032108c266c0594e7be",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-15T23:44:19",
+   "error": "the server did not answer"
+  },
+  {
+   "run_id": "H1015-2323-wake-2",
+   "arm": "wake",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "1422f7e9bfeee41b6d1b2032108c266c0594e7be",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-15T23:45:49",
+   "error": "the server did not answer"
+  },
+  {
+   "run_id": "H1015-2323-timer-2",
+   "arm": "timer",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "off",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "1422f7e9bfeee41b6d1b2032108c266c0594e7be",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-15T23:47:19",
+   "error": "the server did not answer"
+  }
+ ]
+}

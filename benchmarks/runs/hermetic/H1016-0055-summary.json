@@ -1,0 +1,349 @@
+{
+ "seed": 20261017,
+ "order": [
+  "t3find#1",
+  "find#1",
+  "t3short#1"
+ ],
+ "manifests": [
+  {
+   "run_id": "H1016-0055-t3find-1",
+   "arm": "t3find",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "e663304948912b9ca185b6b14209c6ad5775a27d",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T00:55:28",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0055-t3find-1",
+    "task": "3",
+    "brief": "findings",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 4,
+     "cost_usd": 0.055,
+     "tokens": 29630,
+     "summary": "W1 and W2 are done and passed acceptance. W3 has finished NULLS ordering, GROUP_CONCAT and FILTER, and is moving on to recursive CTE, UPDATE FROM, RETURNING, tests and docs. W2's dml.returning_rows is",
+     "next_in": 98,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 5,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-10",
+    "seconds": 267,
+    "final": "219 of 219 checks pass",
+    "tokens": 5054808,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Frontend: parser, ast, functions",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, savepoints",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 24136,
+      "cost_usd": 0.1108635
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 29630,
+      "cost_usd": 0.0551
+     }
+    }
+   },
+   "ended_at": "2026-10-16T01:01:12",
+   "wall_s": 344,
+   "headline": {
+    "seconds": 267,
+    "final": "219 of 219 checks pass",
+    "tokens": 5054808,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 4,
+     "cost_usd": 0.055,
+     "tokens": 29630,
+     "summary": "W1 and W2 are done and passed acceptance. W3 has finished NULLS ordering, GROUP_CONCAT and FILTER, and is moving on to recursive CTE, UPDATE FROM, RETURNING, tests and docs. W2's dml.returning_rows is",
+     "next_in": 98,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 5,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0055-find-1",
+   "arm": "find",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "findings",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "e663304948912b9ca185b6b14209c6ad5775a27d",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T01:01:12",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0055-find-1",
+    "task": "2",
+    "brief": "findings",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.036,
+     "tokens": 21048,
+     "summary": "W1 is done and W2 and W3 are working. W2 has published its dml.execute interface and W1 has published its parser shapes, and W3 has received both. I see no gaps to fix.",
+     "next_in": 66,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-39",
+    "seconds": 373,
+    "final": "154 of 154 checks pass",
+    "tokens": 5337728,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Lexer, parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views, FKs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side and docs",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 27495,
+      "cost_usd": 0.1236035
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 21048,
+      "cost_usd": 0.0365
+     }
+    }
+   },
+   "ended_at": "2026-10-16T01:08:41",
+   "wall_s": 449,
+   "headline": {
+    "seconds": 373,
+    "final": "154 of 154 checks pass",
+    "tokens": 5337728,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.036,
+     "tokens": 21048,
+     "summary": "W1 is done and W2 and W3 are working. W2 has published its dml.execute interface and W1 has published its parser shapes, and W3 has received both. I see no gaps to fix.",
+     "next_in": 66,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0055-t3short-1",
+   "arm": "t3short",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "e663304948912b9ca185b6b14209c6ad5775a27d",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T01:08:41",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0055-t3short-1",
+    "task": "3",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.039,
+     "tokens": 21514,
+     "summary": "W1 and W2 are done and passed acceptance. W3 has written the executor and is working on tests and docs, with the interfaces from W1 and W2 already in hand. No coordination needed.",
+     "next_in": 77,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 4,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-11",
+    "seconds": 281,
+    "final": "219 of 219 checks pass",
+    "tokens": 5675117,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Frontend: parser, ast, functions",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, savepoints",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 24240,
+      "cost_usd": 0.1118915
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 21514,
+      "cost_usd": 0.039
+     }
+    }
+   },
+   "ended_at": "2026-10-16T01:14:39",
+   "wall_s": 358,
+   "headline": {
+    "seconds": 281,
+    "final": "219 of 219 checks pass",
+    "tokens": 5675117,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.039,
+     "tokens": 21514,
+     "summary": "W1 and W2 are done and passed acceptance. W3 has written the executor and is working on tests and docs, with the interfaces from W1 and W2 already in hand. No coordination needed.",
+     "next_in": 77,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 4,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  }
+ ]
+}

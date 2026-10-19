@@ -1,0 +1,113 @@
+{
+ "run_id": "H1016-0508-full-2",
+ "arm": "full",
+ "switches": {
+  "TASK": "2",
+  "BRIEF": "full",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "cc6bd8fade59fcfe0d15aa97fc0cf9f7685496db",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T05:08:09",
+ "result": {
+  "lane": "team",
+  "n": "H1016-0508-full-2",
+  "task": "2",
+  "brief": "full",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 4,
+   "cost_usd": 0.06,
+   "tokens": 30683,
+   "summary": "W1 and W2 are done and passed acceptance. W3 is still wiring the executor, and W2's database.py already calls dml.execute, so W3 needs no dml wiring. Nothing needs a message right now.",
+   "next_in": 77,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 5,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video-52",
+  "seconds": 333,
+  "final": "154 of 154 checks pass",
+  "tokens": 5524813,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Parser, expressions, windows",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, DDL, views, FKs",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side and docs",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 0,
+  "costs": {
+   "planner": {
+    "tokens": 27830,
+    "cost_usd": 0.1269415
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 30683,
+    "cost_usd": 0.06
+   }
+  }
+ },
+ "ended_at": "2026-10-16T05:14:57",
+ "wall_s": 408,
+ "headline": {
+  "seconds": 333,
+  "final": "154 of 154 checks pass",
+  "tokens": 5524813,
+  "questions": 0,
+  "verify_rounds": 0,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 4,
+   "cost_usd": 0.06,
+   "tokens": 30683,
+   "summary": "W1 and W2 are done and passed acceptance. W3 is still wiring the executor, and W2's database.py already calls dml.execute, so W3 needs no dml wiring. Nothing needs a message right now.",
+   "next_in": 77,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 5,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

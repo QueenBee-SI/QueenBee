@@ -1,0 +1,113 @@
+{
+ "run_id": "H1015-2354-t3find-1",
+ "arm": "t3find",
+ "switches": {
+  "TASK": "3",
+  "BRIEF": "findings",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T00:24:55",
+ "result": {
+  "lane": "team",
+  "n": "H1015-2354-t3find-1",
+  "task": "3",
+  "brief": "findings",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 4,
+   "cost_usd": 0.054,
+   "tokens": 29789,
+   "summary": "W1 and W3 are done and passed acceptance. W2 is still working, and its upsert path breaks on CompositeIndex.pos, which is what blocks the delivery check.",
+   "next_in": 97,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 4,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video3-7",
+  "seconds": 297,
+  "final": "219 of 219 checks pass",
+  "tokens": 7072189,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Frontend: parser, AST, functions",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, savepoints",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor: ordering, CTEs, UPDATE FROM",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 0,
+  "costs": {
+   "planner": {
+    "tokens": 24362,
+    "cost_usd": 0.1131355
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 29789,
+    "cost_usd": 0.0539
+   }
+  }
+ },
+ "ended_at": "2026-10-16T00:31:10",
+ "wall_s": 374,
+ "headline": {
+  "seconds": 297,
+  "final": "219 of 219 checks pass",
+  "tokens": 7072189,
+  "questions": 0,
+  "verify_rounds": 0,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 4,
+   "cost_usd": 0.054,
+   "tokens": 29789,
+   "summary": "W1 and W3 are done and passed acceptance. W2 is still working, and its upsert path breaks on CompositeIndex.pos, which is what blocks the delivery check.",
+   "next_in": 97,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 4,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

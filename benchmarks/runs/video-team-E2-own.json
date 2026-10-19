@@ -1,0 +1,64 @@
+{
+ "lane": "team",
+ "n": "E2-own",
+ "brief": "short",
+ "read_scope": "own",
+ "interval": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 2,
+  "cost_usd": 0.036,
+  "tokens": 15568,
+  "summary": "W1 done and accepted; W2 is testing dml through a temp shim; W3 is the bottleneck on the executor.py rewrite, so I nudged both to converge on the interface.",
+  "next_in": 87,
+  "interval_s": 120.0,
+  "busy": false
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video-29",
+ "seconds": 363,
+ "final": "154 of 154 checks pass",
+ "tokens": 6197364,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, FKs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side, docs",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 28140,
+   "cost_usd": 0.1300415
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 15568,
+   "cost_usd": 0.0364
+  }
+ }
+}

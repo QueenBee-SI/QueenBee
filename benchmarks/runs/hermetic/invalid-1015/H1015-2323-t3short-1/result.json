@@ -1,0 +1,69 @@
+{
+ "lane": "team",
+ "n": "H1015-2323-t3short-1",
+ "task": "3",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 4,
+  "cost_usd": 0.056,
+  "tokens": 36908,
+  "summary": "W1 and W3 are done and passed acceptance. windows.py now handles Func.filter and GROUP_CONCAT, which fixes the W3 issue on checks 168 and 170. W2 is still working on DML and savepoints, and the delive",
+  "next_in": 90,
+  "interval_s": 120.0,
+  "busy": false,
+  "wakes": 3,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video3-5",
+ "seconds": 263,
+ "final": "219 of 219 checks pass",
+ "tokens": 5156612,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Frontend: parser, AST, functions",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, savepoints",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 24287,
+   "cost_usd": 0.1123855
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 36908,
+   "cost_usd": 0.0555
+  }
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "lane": "team",
+ "n": "H1015-2354-t3short-2",
+ "task": "3",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 5,
+  "cost_usd": 0.064,
+  "tokens": 36227,
+  "summary": "W1 and W3 are done and passed acceptance. W2 is still working on dml.py (RETURNING, CTAS) and the database.py savepoints. W3 may not have wired the CTAS routing.",
+  "next_in": 78,
+  "interval_s": 120.0,
+  "busy": false,
+  "wakes": 6,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video3-9",
+ "seconds": 352,
+ "final": "219 of 219 checks pass",
+ "tokens": 5785827,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Frontend: parser, ast, functions",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, savepoints",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 24404,
+   "cost_usd": 0.1135435
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 36227,
+   "cost_usd": 0.0641
+  }
+ }
+}

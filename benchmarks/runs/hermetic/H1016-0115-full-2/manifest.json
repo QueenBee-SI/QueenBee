@@ -1,0 +1,120 @@
+{
+ "run_id": "H1016-0115-full-2",
+ "arm": "full",
+ "switches": {
+  "TASK": "2",
+  "BRIEF": "full",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T04:36:53",
+ "result": {
+  "lane": "team",
+  "n": "H1016-0115-full-2",
+  "task": "2",
+  "brief": "full",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 7,
+   "cost_usd": 0.112,
+   "tokens": 55979,
+   "summary": "W4 is queued after the failed integration check. Check 141 is already with W3, so I told W4 to rerun the check and leave dml.py alone.",
+   "next_in": 86,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 7,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video-49",
+  "seconds": 592,
+  "final": "154 of 154 checks pass",
+  "tokens": 6847097,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Lexer, parser, expressions, windows",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Select side of executor",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Storage, DML, DDL, docs",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    4,
+    "integration fix 1",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 1,
+  "costs": {
+   "planner": {
+    "tokens": 27601,
+    "cost_usd": 0.1246635
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 55979,
+    "cost_usd": 0.112
+   }
+  }
+ },
+ "ended_at": "2026-10-16T04:47:57",
+ "wall_s": 665,
+ "headline": {
+  "seconds": 592,
+  "final": "154 of 154 checks pass",
+  "tokens": 6847097,
+  "questions": 0,
+  "verify_rounds": 1,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 7,
+   "cost_usd": 0.112,
+   "tokens": 55979,
+   "summary": "W4 is queued after the failed integration check. Check 141 is already with W3, so I told W4 to rerun the check and leave dml.py alone.",
+   "next_in": 86,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 7,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

@@ -25,7 +25,8 @@ them, or go and do something else.
 
 **It finishes the job.** You say what "done" means, usually a test command. When every worker is in, the queen runs
 it. If the parts do not meet, she sends one more worker to join them and runs it again. Her report keeps what she
-checked apart from what a worker merely said.
+checked apart from what a worker merely said. On our test job, three agents side by side stopped one check short
+with every agent saying done; the queen's team ran the check and finished. [The numbers.](docs/results.md)
 
 **Claude and Codex, one team.** Both work from the same brief on the same job, each on the part that suits it. Any agent
 installed on your computer can take any seat, including the queen's.
@@ -79,6 +80,8 @@ Everything stays on your computer. What it does not do yet is listed plainly in 
 - [Tour of the screen](docs/tour.md): the map, the terminals, the queen's panel, Decisions, Report.
 - [User guide](docs/user-guide.md): every button and setting.
 - [The demo, step by step](docs/free-demo.md).
+- [What we measured](docs/results.md): alone, side by side and with the queen on one job, and the
+  [files to run it again](benchmarks/README.md).
 - [Known limits](docs/known-limits.md), [Security](SECURITY.md), [Changelog](CHANGELOG.md).
 
 ## Contributing

@@ -1,0 +1,66 @@
+{
+ "lane": "team",
+ "n": "T3b-short",
+ "task": "3",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 2,
+  "cost_usd": 0.03,
+  "tokens": 14641,
+  "summary": "W1 and W3 are done and passed acceptance. W2 finished storage.py and is moving on to dml and savepoints. The delivery check is still waiting on W2.",
+  "next_in": 58,
+  "interval_s": 120.0,
+  "busy": false
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video3-2",
+ "seconds": 274,
+ "final": "219 of 219 checks pass",
+ "tokens": 4547115,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Frontend: lexer, parser, expressions",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, savepoints",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 24271,
+   "cost_usd": 0.11222549999999999
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 14641,
+   "cost_usd": 0.0296
+  }
+ }
+}

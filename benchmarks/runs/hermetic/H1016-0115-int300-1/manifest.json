@@ -1,0 +1,120 @@
+{
+ "run_id": "H1016-0115-int300-1",
+ "arm": "int300",
+ "switches": {
+  "TASK": "2",
+  "BRIEF": "short",
+  "READ_SCOPE": "",
+  "INTERVAL": "300",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T04:23:02",
+ "result": {
+  "lane": "team",
+  "n": "H1016-0115-int300-1",
+  "task": "2",
+  "brief": "short",
+  "read_scope": "",
+  "interval": "300",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.05,
+   "tokens": 43972,
+   "summary": "W1-W3 are done and their acceptance checks passed. W4 is fixing the failing integration check `python check_minidb.py`, and nothing needs a word from me yet.",
+   "next_in": 245,
+   "interval_s": 300.0,
+   "busy": false,
+   "wakes": 5,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video-47",
+  "seconds": 354,
+  "final": "154 of 154 checks pass",
+  "tokens": 4864289,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Parser, lexer, expressions, windows",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, DDL, views, FKs",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side and docs",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    4,
+    "integration fix 1",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 1,
+  "costs": {
+   "planner": {
+    "tokens": 27664,
+    "cost_usd": 0.1252935
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 43972,
+    "cost_usd": 0.0504
+   }
+  }
+ },
+ "ended_at": "2026-10-16T04:30:14",
+ "wall_s": 431,
+ "headline": {
+  "seconds": 354,
+  "final": "154 of 154 checks pass",
+  "tokens": 4864289,
+  "questions": 0,
+  "verify_rounds": 1,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.05,
+   "tokens": 43972,
+   "summary": "W1-W3 are done and their acceptance checks passed. W4 is fixing the failing integration check `python check_minidb.py`, and nothing needs a word from me yet.",
+   "next_in": 245,
+   "interval_s": 300.0,
+   "busy": false,
+   "wakes": 5,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

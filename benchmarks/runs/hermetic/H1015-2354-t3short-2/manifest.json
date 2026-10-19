@@ -1,0 +1,113 @@
+{
+ "run_id": "H1015-2354-t3short-2",
+ "arm": "t3short",
+ "switches": {
+  "TASK": "3",
+  "BRIEF": "short",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T00:36:50",
+ "result": {
+  "lane": "team",
+  "n": "H1015-2354-t3short-2",
+  "task": "3",
+  "brief": "short",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 5,
+   "cost_usd": 0.064,
+   "tokens": 36227,
+   "summary": "W1 and W3 are done and passed acceptance. W2 is still working on dml.py (RETURNING, CTAS) and the database.py savepoints. W3 may not have wired the CTAS routing.",
+   "next_in": 78,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 6,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video3-9",
+  "seconds": 352,
+  "final": "219 of 219 checks pass",
+  "tokens": 5785827,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Frontend: parser, ast, functions",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, savepoints",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 0,
+  "costs": {
+   "planner": {
+    "tokens": 24404,
+    "cost_usd": 0.1135435
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 36227,
+    "cost_usd": 0.0641
+   }
+  }
+ },
+ "ended_at": "2026-10-16T00:44:01",
+ "wall_s": 430,
+ "headline": {
+  "seconds": 352,
+  "final": "219 of 219 checks pass",
+  "tokens": 5785827,
+  "questions": 0,
+  "verify_rounds": 0,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 5,
+   "cost_usd": 0.064,
+   "tokens": 36227,
+   "summary": "W1 and W3 are done and passed acceptance. W2 is still working on dml.py (RETURNING, CTAS) and the database.py savepoints. W3 may not have wired the CTAS routing.",
+   "next_in": 78,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 6,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

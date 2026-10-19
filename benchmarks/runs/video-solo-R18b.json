@@ -1,0 +1,30 @@
+{
+ "lane": "solo",
+ "n": "R18b",
+ "task": "2",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": null,
+ "delay": 1.0,
+ "claude": "sonnet",
+ "codex": "gpt-5.6-terra",
+ "folder": "~/QueenBeeDemo/video-65",
+ "seconds": 675,
+ "final": "154 of 154 checks pass",
+ "tokens": 3482061,
+ "questions": 20,
+ "jobs": [
+  [
+   1,
+   "One agent",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": null,
+ "verify_rounds": null,
+ "costs": {}
+}

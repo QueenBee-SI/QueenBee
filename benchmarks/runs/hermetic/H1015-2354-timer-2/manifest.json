@@ -1,0 +1,113 @@
+{
+ "run_id": "H1015-2354-timer-2",
+ "arm": "timer",
+ "switches": {
+  "TASK": "2",
+  "BRIEF": "findings",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "off",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T00:16:53",
+ "result": {
+  "lane": "team",
+  "n": "H1015-2354-timer-2",
+  "task": "2",
+  "brief": "findings",
+  "read_scope": "",
+  "interval": "",
+  "wake": "off",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.044,
+   "tokens": 22086,
+   "summary": "W1 and W3 are done and passed acceptance. W2 was blocked on W3's executor, which is now finished. W2 also has a test whose UNION widths don't match.",
+   "next_in": 39,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 0,
+   "wake_on_events": false,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video-37",
+  "seconds": 408,
+  "final": "154 of 154 checks pass",
+  "tokens": 6364626,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Lexer, parser, expressions, windows",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, DDL, views, FKs",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side and docs",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 0,
+  "costs": {
+   "planner": {
+    "tokens": 27678,
+    "cost_usd": 0.1254095
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 22086,
+    "cost_usd": 0.044
+   }
+  }
+ },
+ "ended_at": "2026-10-16T00:24:55",
+ "wall_s": 483,
+ "headline": {
+  "seconds": 408,
+  "final": "154 of 154 checks pass",
+  "tokens": 6364626,
+  "questions": 0,
+  "verify_rounds": 0,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.044,
+   "tokens": 22086,
+   "summary": "W1 and W3 are done and passed acceptance. W2 was blocked on W3's executor, which is now finished. W2 also has a test whose UNION widths don't match.",
+   "next_in": 39,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 0,
+   "wake_on_events": false,
+   "min_gap_s": 45.0
+  }
+ }
+}

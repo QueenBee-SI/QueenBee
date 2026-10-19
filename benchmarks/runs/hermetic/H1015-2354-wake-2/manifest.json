@@ -1,0 +1,113 @@
+{
+ "run_id": "H1015-2354-wake-2",
+ "arm": "wake",
+ "switches": {
+  "TASK": "2",
+  "BRIEF": "findings",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "580baa7b7a2853da2763110735845c1380e73ef3",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T00:04:54",
+ "result": {
+  "lane": "team",
+  "n": "H1015-2354-wake-2",
+  "task": "2",
+  "brief": "findings",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.036,
+   "tokens": 20888,
+   "summary": "W1 done and accepted; W2 has written dml.py and is moving to tests, and W3 is designing the executor rewrite. The W2/W3 interface (dml.execute and the subquery callback) is agreed on the board, so I'm",
+   "next_in": 63,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 3,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video-36",
+  "seconds": 310,
+  "final": "154 of 154 checks pass",
+  "tokens": 5096612,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Parser, expressions, windows",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, DDL, views, FKs",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 0,
+  "costs": {
+   "planner": {
+    "tokens": 27220,
+    "cost_usd": 0.12086550000000001
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 20888,
+    "cost_usd": 0.0358
+   }
+  }
+ },
+ "ended_at": "2026-10-16T00:11:18",
+ "wall_s": 384,
+ "headline": {
+  "seconds": 310,
+  "final": "154 of 154 checks pass",
+  "tokens": 5096612,
+  "questions": 0,
+  "verify_rounds": 0,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.036,
+   "tokens": 20888,
+   "summary": "W1 done and accepted; W2 has written dml.py and is moving to tests, and W3 is designing the executor rewrite. The W2/W3 interface (dml.execute and the subquery callback) is agreed on the board, so I'm",
+   "next_in": 63,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 3,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

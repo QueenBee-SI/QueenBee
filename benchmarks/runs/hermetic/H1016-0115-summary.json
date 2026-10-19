@@ -1,0 +1,1284 @@
+{
+ "seed": 20261018,
+ "order": [
+  "int300#3",
+  "none#2",
+  "int300#2",
+  "full#3",
+  "full#1",
+  "own#3",
+  "own#1",
+  "int300#1",
+  "own#2",
+  "full#2",
+  "none#3",
+  "none#1"
+ ],
+ "manifests": [
+  {
+   "run_id": "H1016-0115-int300-3",
+   "arm": "int300",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "300",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T01:15:52",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-int300-3",
+    "task": "2",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "300",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 1,
+     "cost_usd": 0.017,
+     "tokens": 6996,
+     "summary": "W1 on parser, W2/W3 starting; AST node shapes are the main cross-worker dependency and are unpublished.",
+     "next_in": 249,
+     "interval_s": 300.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-40",
+    "seconds": 210,
+    "final": "93 of 154 checks pass",
+    "tokens": 1622795,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, expressions, windows",
+      "failed",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, foreign keys",
+      "failed",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side and docs",
+      "failed",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "failed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 27807,
+      "cost_usd": 0.1267115
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 6996,
+      "cost_usd": 0.0171
+     }
+    }
+   },
+   "ended_at": "2026-10-16T01:20:44",
+   "wall_s": 292,
+   "headline": {
+    "seconds": 210,
+    "final": "93 of 154 checks pass",
+    "tokens": 1622795,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 1,
+     "cost_usd": 0.017,
+     "tokens": 6996,
+     "summary": "W1 on parser, W2/W3 starting; AST node shapes are the main cross-worker dependency and are unpublished.",
+     "next_in": 249,
+     "interval_s": 300.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-none-2",
+   "arm": "none",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "none",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T01:20:44",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-none-2",
+    "task": "2",
+    "brief": "none",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 0,
+     "cost_usd": 0.0,
+     "tokens": 0,
+     "summary": "",
+     "next_in": 108,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-41",
+    "seconds": 2400,
+    "final": "93 of 154 checks pass",
+    "tokens": null,
+    "questions": 0,
+    "jobs": [],
+    "verify": null,
+    "verify_rounds": null,
+    "costs": {}
+   },
+   "ended_at": "2026-10-16T02:01:38",
+   "wall_s": 2454,
+   "headline": {
+    "seconds": 2400,
+    "final": "93 of 154 checks pass",
+    "tokens": null,
+    "questions": 0,
+    "verify_rounds": null,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 0,
+     "cost_usd": 0.0,
+     "tokens": 0,
+     "summary": "",
+     "next_in": 108,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-int300-2",
+   "arm": "int300",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "300",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T02:01:38",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-int300-2",
+    "task": "2",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "300",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 0,
+     "cost_usd": 0.0,
+     "tokens": 0,
+     "summary": "",
+     "next_in": 286,
+     "interval_s": 300.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-42",
+    "seconds": 2402,
+    "final": "93 of 154 checks pass",
+    "tokens": null,
+    "questions": 0,
+    "jobs": [],
+    "verify": null,
+    "verify_rounds": null,
+    "costs": {}
+   },
+   "ended_at": "2026-10-16T02:42:35",
+   "wall_s": 2458,
+   "headline": {
+    "seconds": 2402,
+    "final": "93 of 154 checks pass",
+    "tokens": null,
+    "questions": 0,
+    "verify_rounds": null,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 0,
+     "cost_usd": 0.0,
+     "tokens": 0,
+     "summary": "",
+     "next_in": 286,
+     "interval_s": 300.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-full-3",
+   "arm": "full",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "full",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T02:42:35",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-full-3",
+    "task": "2",
+    "brief": "full",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 0,
+     "cost_usd": 0.0,
+     "tokens": 0,
+     "summary": "",
+     "next_in": 104,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-43",
+    "seconds": 2404,
+    "final": "93 of 154 checks pass",
+    "tokens": null,
+    "questions": 0,
+    "jobs": [],
+    "verify": null,
+    "verify_rounds": null,
+    "costs": {}
+   },
+   "ended_at": "2026-10-16T03:23:33",
+   "wall_s": 2458,
+   "headline": {
+    "seconds": 2404,
+    "final": "93 of 154 checks pass",
+    "tokens": null,
+    "questions": 0,
+    "verify_rounds": null,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 0,
+     "cost_usd": 0.0,
+     "tokens": 0,
+     "summary": "",
+     "next_in": 104,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-full-1",
+   "arm": "full",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "full",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T03:23:33",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-full-1",
+    "task": "2",
+    "brief": "full",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 0,
+     "cost_usd": 0.0,
+     "tokens": 0,
+     "summary": "",
+     "next_in": 101,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-44",
+    "seconds": 2406,
+    "final": "93 of 154 checks pass",
+    "tokens": null,
+    "questions": 0,
+    "jobs": [],
+    "verify": null,
+    "verify_rounds": null,
+    "costs": {}
+   },
+   "ended_at": "2026-10-16T04:04:38",
+   "wall_s": 2465,
+   "headline": {
+    "seconds": 2406,
+    "final": "93 of 154 checks pass",
+    "tokens": null,
+    "questions": 0,
+    "verify_rounds": null,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 0,
+     "cost_usd": 0.0,
+     "tokens": 0,
+     "summary": "",
+     "next_in": 101,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 0,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-own-3",
+   "arm": "own",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "short",
+    "READ_SCOPE": "own",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T04:04:38",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-own-3",
+    "task": "2",
+    "brief": "short",
+    "read_scope": "own",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 6,
+     "cost_usd": 0.093,
+     "tokens": 47480,
+     "summary": "W4 is fixing the delivery check. Check 109 (WITH inside a derived table) was still unowned because W1 is done, so I assigned it to W4.",
+     "next_in": 87,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 5,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-45",
+    "seconds": 474,
+    "final": "154 of 154 checks pass",
+    "tokens": 5407982,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, lexer, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views, FKs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side and docs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      4,
+      "integration fix 1",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 1,
+    "costs": {
+     "planner": {
+      "tokens": 27710,
+      "cost_usd": 0.1257415
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 47480,
+      "cost_usd": 0.0925
+     }
+    }
+   },
+   "ended_at": "2026-10-16T04:13:49",
+   "wall_s": 551,
+   "headline": {
+    "seconds": 474,
+    "final": "154 of 154 checks pass",
+    "tokens": 5407982,
+    "questions": 0,
+    "verify_rounds": 1,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 6,
+     "cost_usd": 0.093,
+     "tokens": 47480,
+     "summary": "W4 is fixing the delivery check. Check 109 (WITH inside a derived table) was still unowned because W1 is done, so I assigned it to W4.",
+     "next_in": 87,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 5,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-own-1",
+   "arm": "own",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "short",
+    "READ_SCOPE": "own",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T04:13:49",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-own-1",
+    "task": "2",
+    "brief": "short",
+    "read_scope": "own",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 7,
+     "cost_usd": 0.206,
+     "tokens": 353142,
+     "summary": "W4 is fixing the remaining integration failures. Check 109 depends on a parser change that W1 will never make, so I told W4 to make it.",
+     "next_in": 102,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 9,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-46",
+    "seconds": 477,
+    "final": "154 of 154 checks pass",
+    "tokens": 6506548,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, lexer, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views, FKs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side, docs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      4,
+      "integration fix 1",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 1,
+    "costs": {
+     "planner": {
+      "tokens": 27631,
+      "cost_usd": 0.12495150000000001
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 353142,
+      "cost_usd": 0.2063
+     }
+    }
+   },
+   "ended_at": "2026-10-16T04:23:02",
+   "wall_s": 553,
+   "headline": {
+    "seconds": 477,
+    "final": "154 of 154 checks pass",
+    "tokens": 6506548,
+    "questions": 0,
+    "verify_rounds": 1,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 7,
+     "cost_usd": 0.206,
+     "tokens": 353142,
+     "summary": "W4 is fixing the remaining integration failures. Check 109 depends on a parser change that W1 will never make, so I told W4 to make it.",
+     "next_in": 102,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 9,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-int300-1",
+   "arm": "int300",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "300",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T04:23:02",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-int300-1",
+    "task": "2",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "300",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.05,
+     "tokens": 43972,
+     "summary": "W1-W3 are done and their acceptance checks passed. W4 is fixing the failing integration check `python check_minidb.py`, and nothing needs a word from me yet.",
+     "next_in": 245,
+     "interval_s": 300.0,
+     "busy": false,
+     "wakes": 5,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-47",
+    "seconds": 354,
+    "final": "154 of 154 checks pass",
+    "tokens": 4864289,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, lexer, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views, FKs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side and docs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      4,
+      "integration fix 1",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 1,
+    "costs": {
+     "planner": {
+      "tokens": 27664,
+      "cost_usd": 0.1252935
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 43972,
+      "cost_usd": 0.0504
+     }
+    }
+   },
+   "ended_at": "2026-10-16T04:30:14",
+   "wall_s": 431,
+   "headline": {
+    "seconds": 354,
+    "final": "154 of 154 checks pass",
+    "tokens": 4864289,
+    "questions": 0,
+    "verify_rounds": 1,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.05,
+     "tokens": 43972,
+     "summary": "W1-W3 are done and their acceptance checks passed. W4 is fixing the failing integration check `python check_minidb.py`, and nothing needs a word from me yet.",
+     "next_in": 245,
+     "interval_s": 300.0,
+     "busy": false,
+     "wakes": 5,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-own-2",
+   "arm": "own",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "short",
+    "READ_SCOPE": "own",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T04:30:14",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-own-2",
+    "task": "2",
+    "brief": "short",
+    "read_scope": "own",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 4,
+     "cost_usd": 0.058,
+     "tokens": 30185,
+     "summary": "W1-W3 are done and passed acceptance. W4 is working on the integration failure in check_minidb.py, and nothing needs coordinating right now.",
+     "next_in": 89,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 6,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-48",
+    "seconds": 326,
+    "final": "154 of 154 checks pass",
+    "tokens": 5596979,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Select executor side",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Storage, DML, DDL, docs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      4,
+      "integration fix 1",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 1,
+    "costs": {
+     "planner": {
+      "tokens": 27455,
+      "cost_usd": 0.1231795
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 30185,
+      "cost_usd": 0.0577
+     }
+    }
+   },
+   "ended_at": "2026-10-16T04:36:53",
+   "wall_s": 399,
+   "headline": {
+    "seconds": 326,
+    "final": "154 of 154 checks pass",
+    "tokens": 5596979,
+    "questions": 0,
+    "verify_rounds": 1,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 4,
+     "cost_usd": 0.058,
+     "tokens": 30185,
+     "summary": "W1-W3 are done and passed acceptance. W4 is working on the integration failure in check_minidb.py, and nothing needs coordinating right now.",
+     "next_in": 89,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 6,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-full-2",
+   "arm": "full",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "full",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T04:36:53",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-full-2",
+    "task": "2",
+    "brief": "full",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 7,
+     "cost_usd": 0.112,
+     "tokens": 55979,
+     "summary": "W4 is queued after the failed integration check. Check 141 is already with W3, so I told W4 to rerun the check and leave dml.py alone.",
+     "next_in": 86,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 7,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-49",
+    "seconds": 592,
+    "final": "154 of 154 checks pass",
+    "tokens": 6847097,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Lexer, parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Select side of executor",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Storage, DML, DDL, docs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      4,
+      "integration fix 1",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 1,
+    "costs": {
+     "planner": {
+      "tokens": 27601,
+      "cost_usd": 0.1246635
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 55979,
+      "cost_usd": 0.112
+     }
+    }
+   },
+   "ended_at": "2026-10-16T04:47:57",
+   "wall_s": 665,
+   "headline": {
+    "seconds": 592,
+    "final": "154 of 154 checks pass",
+    "tokens": 6847097,
+    "questions": 0,
+    "verify_rounds": 1,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 7,
+     "cost_usd": 0.112,
+     "tokens": 55979,
+     "summary": "W4 is queued after the failed integration check. Check 141 is already with W3, so I told W4 to rerun the check and leave dml.py alone.",
+     "next_in": 86,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 7,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-none-3",
+   "arm": "none",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "none",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T04:47:57",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-none-3",
+    "task": "2",
+    "brief": "none",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 6,
+     "cost_usd": 0.079,
+     "tokens": 44608,
+     "summary": "All three parts passed their own checks, but the package check fails. W4 is queued, and I passed it the unresolved derived-table alias issue and the check 141 view validation.",
+     "next_in": 66,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 7,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-50",
+    "seconds": 430,
+    "final": "154 of 154 checks pass",
+    "tokens": 5315494,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, docs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      4,
+      "integration fix 1",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 1,
+    "costs": {
+     "planner": {
+      "tokens": 27984,
+      "cost_usd": 0.1284815
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 44608,
+      "cost_usd": 0.0788
+     }
+    }
+   },
+   "ended_at": "2026-10-16T04:56:25",
+   "wall_s": 507,
+   "headline": {
+    "seconds": 430,
+    "final": "154 of 154 checks pass",
+    "tokens": 5315494,
+    "questions": 0,
+    "verify_rounds": 1,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 6,
+     "cost_usd": 0.079,
+     "tokens": 44608,
+     "summary": "All three parts passed their own checks, but the package check fails. W4 is queued, and I passed it the unresolved derived-table alias issue and the check 141 view validation.",
+     "next_in": 66,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 7,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0115-none-1",
+   "arm": "none",
+   "switches": {
+    "TASK": "2",
+    "BRIEF": "none",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "6b4909c4f8bd542f93eca04185b9049ac1bf0efb",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T04:56:25",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0115-none-1",
+    "task": "2",
+    "brief": "none",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 6,
+     "cost_usd": 0.077,
+     "tokens": 44284,
+     "summary": "W4 is working on the failing integration check. W1, W2 and W3 are done, and the 109 and 141 fixes were already sent to W1 and W2, so nothing new to add.",
+     "next_in": 100,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 5,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video-51",
+    "seconds": 459,
+    "final": "154 of 154 checks pass",
+    "tokens": 6010155,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Lexer, parser, expressions, windows",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, DDL, views, FKs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      3,
+      "Executor select side, docs",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      4,
+      "integration fix 1",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 1,
+    "costs": {
+     "planner": {
+      "tokens": 27604,
+      "cost_usd": 0.1246815
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 44284,
+      "cost_usd": 0.0765
+     }
+    }
+   },
+   "ended_at": "2026-10-16T05:05:17",
+   "wall_s": 532,
+   "headline": {
+    "seconds": 459,
+    "final": "154 of 154 checks pass",
+    "tokens": 6010155,
+    "questions": 0,
+    "verify_rounds": 1,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 6,
+     "cost_usd": 0.077,
+     "tokens": 44284,
+     "summary": "W4 is working on the failing integration check. W1, W2 and W3 are done, and the 109 and 141 fixes were already sent to W1 and W2, so nothing new to add.",
+     "next_in": 100,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 5,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  }
+ ]
+}

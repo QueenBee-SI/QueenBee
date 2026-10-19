@@ -1,0 +1,113 @@
+{
+ "run_id": "H1016-0055-t3find-1",
+ "arm": "t3find",
+ "switches": {
+  "TASK": "3",
+  "BRIEF": "findings",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "e663304948912b9ca185b6b14209c6ad5775a27d",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T00:55:28",
+ "result": {
+  "lane": "team",
+  "n": "H1016-0055-t3find-1",
+  "task": "3",
+  "brief": "findings",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 4,
+   "cost_usd": 0.055,
+   "tokens": 29630,
+   "summary": "W1 and W2 are done and passed acceptance. W3 has finished NULLS ordering, GROUP_CONCAT and FILTER, and is moving on to recursive CTE, UPDATE FROM, RETURNING, tests and docs. W2's dml.returning_rows is",
+   "next_in": 98,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 5,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video3-10",
+  "seconds": 267,
+  "final": "219 of 219 checks pass",
+  "tokens": 5054808,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Frontend: parser, ast, functions",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, savepoints",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 0,
+  "costs": {
+   "planner": {
+    "tokens": 24136,
+    "cost_usd": 0.1108635
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 29630,
+    "cost_usd": 0.0551
+   }
+  }
+ },
+ "ended_at": "2026-10-16T01:01:12",
+ "wall_s": 344,
+ "headline": {
+  "seconds": 267,
+  "final": "219 of 219 checks pass",
+  "tokens": 5054808,
+  "questions": 0,
+  "verify_rounds": 0,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 4,
+   "cost_usd": 0.055,
+   "tokens": 29630,
+   "summary": "W1 and W2 are done and passed acceptance. W3 has finished NULLS ordering, GROUP_CONCAT and FILTER, and is moving on to recursive CTE, UPDATE FROM, RETURNING, tests and docs. W2's dml.returning_rows is",
+   "next_in": 98,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 5,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

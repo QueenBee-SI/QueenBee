@@ -1,0 +1,113 @@
+{
+ "run_id": "H1016-0055-t3short-1",
+ "arm": "t3short",
+ "switches": {
+  "TASK": "3",
+  "BRIEF": "short",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "e663304948912b9ca185b6b14209c6ad5775a27d",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T01:08:41",
+ "result": {
+  "lane": "team",
+  "n": "H1016-0055-t3short-1",
+  "task": "3",
+  "brief": "short",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.039,
+   "tokens": 21514,
+   "summary": "W1 and W2 are done and passed acceptance. W3 has written the executor and is working on tests and docs, with the interfaces from W1 and W2 already in hand. No coordination needed.",
+   "next_in": 77,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 4,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video3-11",
+  "seconds": 281,
+  "final": "219 of 219 checks pass",
+  "tokens": 5675117,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Frontend: parser, ast, functions",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, savepoints",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 0,
+  "costs": {
+   "planner": {
+    "tokens": 24240,
+    "cost_usd": 0.1118915
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 21514,
+    "cost_usd": 0.039
+   }
+  }
+ },
+ "ended_at": "2026-10-16T01:14:39",
+ "wall_s": 358,
+ "headline": {
+  "seconds": 281,
+  "final": "219 of 219 checks pass",
+  "tokens": 5675117,
+  "questions": 0,
+  "verify_rounds": 0,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.039,
+   "tokens": 21514,
+   "summary": "W1 and W2 are done and passed acceptance. W3 has written the executor and is working on tests and docs, with the interfaces from W1 and W2 already in hand. No coordination needed.",
+   "next_in": 77,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 4,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

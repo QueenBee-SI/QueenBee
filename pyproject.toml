@@ -28,3 +28,6 @@ include = ["queenbee*"]
 [tool.setuptools.package-data]
 queenbee = ["assets/*", "mother/static/*", "mother/static/vendor/*",
     "mother/demo_free/*", "mother/demo_free/notes/*", "mother/demo_free/tests/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

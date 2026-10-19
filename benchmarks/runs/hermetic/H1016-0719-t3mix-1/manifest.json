@@ -1,0 +1,115 @@
+{
+ "run_id": "H1016-0719-t3mix-1",
+ "arm": "t3mix",
+ "switches": {
+  "TASK": "3",
+  "BRIEF": "short",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": ""
+ },
+ "git_commit": "9cdcccfddbe5b1761bf6a2d2544540355883f6e5",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T08:09:41",
+ "result": {
+  "lane": "team",
+  "n": "H1016-0719-t3mix-1",
+  "task": "3",
+  "brief": "short",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.038,
+   "tokens": 21354,
+   "summary": "W1 and W3 are done and passed acceptance. W2 is still working on its tests and has the AST shapes from W1. Nothing for me to coordinate right now.",
+   "next_in": 98,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 3,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video3-14",
+  "seconds": 245,
+  "final": "219 of 219 checks pass",
+  "tokens": 3970200,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Frontend: parser, AST, functions",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, database",
+    "done",
+    "codex",
+    "gpt-5.6-sol"
+   ],
+   [
+    3,
+    "Executor select side",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 0,
+  "costs": {
+   "planner": {
+    "tokens": 24133,
+    "cost_usd": 0.1102815
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 21354,
+    "cost_usd": 0.0376
+   }
+  }
+ },
+ "ended_at": "2026-10-16T08:15:03",
+ "invalid": "",
+ "logs": "runs/hermetic-logs/H1016-0719-t3mix-1",
+ "wall_s": 322,
+ "headline": {
+  "seconds": 245,
+  "final": "219 of 219 checks pass",
+  "tokens": 3970200,
+  "questions": 0,
+  "verify_rounds": 0,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.038,
+   "tokens": 21354,
+   "summary": "W1 and W3 are done and passed acceptance. W2 is still working on its tests and has the AST shapes from W1. Nothing for me to coordinate right now.",
+   "next_in": 98,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 3,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

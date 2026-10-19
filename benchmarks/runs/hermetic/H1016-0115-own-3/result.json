@@ -1,0 +1,76 @@
+{
+ "lane": "team",
+ "n": "H1016-0115-own-3",
+ "task": "2",
+ "brief": "short",
+ "read_scope": "own",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 6,
+  "cost_usd": 0.093,
+  "tokens": 47480,
+  "summary": "W4 is fixing the delivery check. Check 109 (WITH inside a derived table) was still unowned because W1 is done, so I assigned it to W4.",
+  "next_in": 87,
+  "interval_s": 120.0,
+  "busy": false,
+  "wakes": 5,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video-45",
+ "seconds": 474,
+ "final": "154 of 154 checks pass",
+ "tokens": 5407982,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, lexer, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, FKs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side and docs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   4,
+   "integration fix 1",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 1,
+ "costs": {
+  "planner": {
+   "tokens": 27710,
+   "cost_usd": 0.1257415
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 47480,
+   "cost_usd": 0.0925
+  }
+ }
+}

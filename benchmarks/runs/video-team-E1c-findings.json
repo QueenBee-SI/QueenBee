@@ -1,0 +1,64 @@
+{
+ "lane": "team",
+ "n": "E1c-findings",
+ "brief": "findings",
+ "read_scope": "",
+ "interval": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 3,
+  "cost_usd": 0.04,
+  "tokens": 21601,
+  "summary": "W1 and W2 are done and passed acceptance. W3 reports 154/154 on the check and is writing tests and docs. The hive is fine, so I'm sending no messages.",
+  "next_in": 39,
+  "interval_s": 120.0,
+  "busy": false
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video-32",
+ "seconds": 413,
+ "final": "154 of 154 checks pass",
+ "tokens": 5175989,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, FKs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side, docs",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 27815,
+   "cost_usd": 0.1267915
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 21601,
+   "cost_usd": 0.04
+  }
+ }
+}

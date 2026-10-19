@@ -1,0 +1,59 @@
+{
+ "lane": "team",
+ "n": "B-none",
+ "brief": "short",
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video-25",
+ "seconds": 428,
+ "final": "154 of 154 checks pass",
+ "tokens": 5673669,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Storage, DML, DDL, docs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   4,
+   "integration fix 1",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 1,
+ "costs": {
+  "planner": {
+   "tokens": 27581,
+   "cost_usd": 0.1244515
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 14755,
+   "cost_usd": 0.0317
+  }
+ },
+ "note": "Labelled BRIEF=none when it ran, but the role write_context=False was dropped by the roles filter (a boolean does not survive `if v`), so the planner wrote its short brief: this is the short-brief run 2 (video-25) of docs/results.md. The no-brief run is video-team-B-none2.json (video-27)."
+}

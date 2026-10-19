@@ -1,0 +1,65 @@
+{
+ "lane": "team",
+ "n": "E1d-findings",
+ "task": "2",
+ "brief": "findings",
+ "read_scope": "",
+ "interval": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 2,
+  "cost_usd": 0.026,
+  "tokens": 13907,
+  "summary": "W1 done and accepted; W2 on storage.py then dml.py, W3 on executor.py. They have already agreed on the dml.execute interface, so no message is needed.",
+  "next_in": 94,
+  "interval_s": 120.0,
+  "busy": false
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video-33",
+ "seconds": 356,
+ "final": "154 of 154 checks pass",
+ "tokens": 4511048,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, FKs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side, docs",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 28170,
+   "cost_usd": 0.1303415
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 13907,
+   "cost_usd": 0.0257
+  }
+ }
+}

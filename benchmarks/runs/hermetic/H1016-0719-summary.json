@@ -1,0 +1,365 @@
+{
+ "seed": 20261021,
+ "order": [
+  "t3solo#2",
+  "t3solo#1",
+  "t3mix#1",
+  "t3mix#2"
+ ],
+ "manifests": [
+  {
+   "run_id": "H1016-0719-t3solo-2",
+   "arm": "t3solo",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "solo",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "9cdcccfddbe5b1761bf6a2d2544540355883f6e5",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T07:19:16",
+   "result": {
+    "lane": "solo",
+    "n": "H1016-0719-t3solo-2",
+    "task": "3",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": null,
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-12",
+    "seconds": 499,
+    "final": "219 of 219 checks pass",
+    "tokens": 2733041,
+    "questions": 18,
+    "jobs": [
+     [
+      1,
+      "One agent",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": null,
+    "verify_rounds": null,
+    "costs": {}
+   },
+   "ended_at": "2026-10-16T07:28:48",
+   "invalid": "",
+   "logs": "runs/hermetic-logs/H1016-0719-t3solo-2",
+   "wall_s": 572,
+   "headline": {
+    "seconds": 499,
+    "final": "219 of 219 checks pass",
+    "tokens": 2733041,
+    "questions": 18,
+    "verify_rounds": null,
+    "director": null
+   }
+  },
+  {
+   "run_id": "H1016-0719-t3solo-1",
+   "arm": "t3solo",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "solo",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": "claude"
+   },
+   "git_commit": "9cdcccfddbe5b1761bf6a2d2544540355883f6e5",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T07:28:48",
+   "result": {
+    "lane": "solo",
+    "n": "H1016-0719-t3solo-1",
+    "task": "3",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": null,
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-13",
+    "seconds": 2401,
+    "final": "178 of 219 checks pass",
+    "tokens": 1814824,
+    "questions": 10,
+    "jobs": [
+     [
+      1,
+      "One agent",
+      "agent working",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": null,
+    "verify_rounds": null,
+    "costs": {}
+   },
+   "ended_at": "2026-10-16T08:09:41",
+   "invalid": "",
+   "logs": "runs/hermetic-logs/H1016-0719-t3solo-1",
+   "wall_s": 2454,
+   "headline": {
+    "seconds": 2401,
+    "final": "178 of 219 checks pass",
+    "tokens": 1814824,
+    "questions": 10,
+    "verify_rounds": null,
+    "director": null
+   }
+  },
+  {
+   "run_id": "H1016-0719-t3mix-1",
+   "arm": "t3mix",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": ""
+   },
+   "git_commit": "9cdcccfddbe5b1761bf6a2d2544540355883f6e5",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T08:09:41",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0719-t3mix-1",
+    "task": "3",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.038,
+     "tokens": 21354,
+     "summary": "W1 and W3 are done and passed acceptance. W2 is still working on its tests and has the AST shapes from W1. Nothing for me to coordinate right now.",
+     "next_in": 98,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-14",
+    "seconds": 245,
+    "final": "219 of 219 checks pass",
+    "tokens": 3970200,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Frontend: parser, AST, functions",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, database",
+      "done",
+      "codex",
+      "gpt-5.6-sol"
+     ],
+     [
+      3,
+      "Executor select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 24133,
+      "cost_usd": 0.1102815
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 21354,
+      "cost_usd": 0.0376
+     }
+    }
+   },
+   "ended_at": "2026-10-16T08:15:03",
+   "invalid": "",
+   "logs": "runs/hermetic-logs/H1016-0719-t3mix-1",
+   "wall_s": 322,
+   "headline": {
+    "seconds": 245,
+    "final": "219 of 219 checks pass",
+    "tokens": 3970200,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.038,
+     "tokens": 21354,
+     "summary": "W1 and W3 are done and passed acceptance. W2 is still working on its tests and has the AST shapes from W1. Nothing for me to coordinate right now.",
+     "next_in": 98,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  },
+  {
+   "run_id": "H1016-0719-t3mix-2",
+   "arm": "t3mix",
+   "switches": {
+    "TASK": "3",
+    "BRIEF": "short",
+    "READ_SCOPE": "",
+    "INTERVAL": "",
+    "WAKE": "",
+    "LANE": "team",
+    "CLAUDE_MODEL": "sonnet",
+    "CODEX_MODEL": "gpt-5.6-sol",
+    "TEAM_AGENT": ""
+   },
+   "git_commit": "9cdcccfddbe5b1761bf6a2d2544540355883f6e5",
+   "git_clean": false,
+   "python": "3.11.9",
+   "platform": "Windows 10 AMD64",
+   "port": 7990,
+   "started_at": "2026-10-16T08:15:03",
+   "result": {
+    "lane": "team",
+    "n": "H1016-0719-t3mix-2",
+    "task": "3",
+    "brief": "short",
+    "read_scope": "",
+    "interval": "",
+    "wake": "",
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.049,
+     "tokens": 38364,
+     "summary": "W1 and W3 are done. W2 is on final regression. CREATE TABLE AS is already routed in database.py:93 to dml.execute, so nothing is blocking and no message is needed.",
+     "next_in": 101,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    },
+    "claude": "sonnet",
+    "codex": "gpt-5.6-sol",
+    "folder": "~/QueenBeeDemo/video3-15",
+    "seconds": 233,
+    "final": "219 of 219 checks pass",
+    "tokens": 3661958,
+    "questions": 0,
+    "jobs": [
+     [
+      1,
+      "Frontend: parser, ast, functions",
+      "done",
+      "claude",
+      "sonnet"
+     ],
+     [
+      2,
+      "Storage, DML, savepoints",
+      "done",
+      "codex",
+      "gpt-5.6-sol"
+     ],
+     [
+      3,
+      "Executor: select side",
+      "done",
+      "claude",
+      "sonnet"
+     ]
+    ],
+    "verify": "passed",
+    "verify_rounds": 0,
+    "costs": {
+     "planner": {
+      "tokens": 24010,
+      "cost_usd": 0.1090515
+     },
+     "architect": {
+      "tokens": 0,
+      "cost_usd": 0
+     },
+     "director": {
+      "tokens": 38364,
+      "cost_usd": 0.0493
+     }
+    }
+   },
+   "ended_at": "2026-10-16T08:20:11",
+   "invalid": "",
+   "logs": "runs/hermetic-logs/H1016-0719-t3mix-2",
+   "wall_s": 308,
+   "headline": {
+    "seconds": 233,
+    "final": "219 of 219 checks pass",
+    "tokens": 3661958,
+    "questions": 0,
+    "verify_rounds": 0,
+    "director": {
+     "model": "sonnet",
+     "agent": "claude",
+     "looks": 3,
+     "cost_usd": 0.049,
+     "tokens": 38364,
+     "summary": "W1 and W3 are done. W2 is on final regression. CREATE TABLE AS is already routed in database.py:93 to dml.execute, so nothing is blocking and no message is needed.",
+     "next_in": 101,
+     "interval_s": 120.0,
+     "busy": false,
+     "wakes": 3,
+     "wake_on_events": true,
+     "min_gap_s": 45.0
+    }
+   }
+  }
+ ]
+}

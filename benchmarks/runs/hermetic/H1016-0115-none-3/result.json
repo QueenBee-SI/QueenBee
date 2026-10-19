@@ -1,0 +1,76 @@
+{
+ "lane": "team",
+ "n": "H1016-0115-none-3",
+ "task": "2",
+ "brief": "none",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 6,
+  "cost_usd": 0.079,
+  "tokens": 44608,
+  "summary": "All three parts passed their own checks, but the package check fails. W4 is queued, and I passed it the unresolved derived-table alias issue and the check 141 view validation.",
+  "next_in": 66,
+  "interval_s": 120.0,
+  "busy": false,
+  "wakes": 7,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video-50",
+ "seconds": 430,
+ "final": "154 of 154 checks pass",
+ "tokens": 5315494,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, docs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   4,
+   "integration fix 1",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 1,
+ "costs": {
+  "planner": {
+   "tokens": 27984,
+   "cost_usd": 0.1284815
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 44608,
+   "cost_usd": 0.0788
+  }
+ }
+}

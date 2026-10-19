@@ -1,0 +1,71 @@
+{
+ "lane": "team",
+ "n": "E3-int300",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "300",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 1,
+  "cost_usd": 0.018,
+  "tokens": 7338,
+  "summary": "W1-W3 done and accepted; W4 is fixing the integration failure in check_minidb.py, and nothing needs coordinating yet.",
+  "next_in": 196,
+  "interval_s": 300.0,
+  "busy": false
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video-30",
+ "seconds": 371,
+ "final": "154 of 154 checks pass",
+ "tokens": 5363912,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side and docs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   4,
+   "integration fix 1",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 1,
+ "costs": {
+  "planner": {
+   "tokens": 27873,
+   "cost_usd": 0.1273715
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 7338,
+   "cost_usd": 0.0176
+  }
+ }
+}

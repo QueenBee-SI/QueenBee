@@ -1,0 +1,22 @@
+{
+ "lane": "solo",
+ "unattended": false,
+ "delay": 12.0,
+ "folder": "a fresh copy of benchmarks/minidb2",
+ "seconds": 821,
+ "tokens": 3234259,
+ "waits": 23,
+ "final": "154 of 154 checks pass",
+ "jobs": [
+  [
+   1,
+   "One agent",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": null,
+ "approved": 20,
+ "recorded": "with the window, for the film; the stand-in person answers after `delay` seconds"
+}

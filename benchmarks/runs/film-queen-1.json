@@ -1,0 +1,50 @@
+{
+ "lane": "team",
+ "unattended": false,
+ "delay": 0.5,
+ "folder": "a fresh copy of benchmarks/minidb2",
+ "seconds": 486,
+ "tokens": 5022281,
+ "waits": 0,
+ "final": "154 of 154 checks pass",
+ "jobs": [
+  [
+   1,
+   "Parser, lexer, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, FKs",
+   "done",
+   "codex",
+   "gpt-5.6-terra"
+  ],
+  [
+   3,
+   "Executor select side, docs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   4,
+   "integration fix 1",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   5,
+   "integration fix 2",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "approved": 30,
+ "recorded": "with the window, for the film; the stand-in person answers after `delay` seconds"
+}

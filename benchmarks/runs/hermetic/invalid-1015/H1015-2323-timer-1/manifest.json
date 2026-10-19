@@ -1,0 +1,113 @@
+{
+ "run_id": "H1015-2323-timer-1",
+ "arm": "timer",
+ "switches": {
+  "TASK": "2",
+  "BRIEF": "findings",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "off",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "0d833e5b1808796a4461dedf67bfab783f75c3f2",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-15T23:28:46",
+ "result": {
+  "lane": "team",
+  "n": "H1015-2323-timer-1",
+  "task": "2",
+  "brief": "findings",
+  "read_scope": "",
+  "interval": "",
+  "wake": "off",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.052,
+   "tokens": 43309,
+   "summary": "W1 and W3 had edits denied for going outside the project folder. W2's tests are blocked on the executor being mid-edit. AST names between W1 and W3 are not yet agreed.",
+   "next_in": 94,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 0,
+   "wake_on_events": false,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video-34",
+  "seconds": 363,
+  "final": "154 of 154 checks pass",
+  "tokens": 5715449,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Parser, expressions, windows",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, DDL, views",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side, docs",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 0,
+  "costs": {
+   "planner": {
+    "tokens": 27503,
+    "cost_usd": 0.1236775
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 43309,
+    "cost_usd": 0.0521
+   }
+  }
+ },
+ "ended_at": "2026-10-15T23:35:51",
+ "wall_s": 425,
+ "headline": {
+  "seconds": 363,
+  "final": "154 of 154 checks pass",
+  "tokens": 5715449,
+  "questions": 0,
+  "verify_rounds": 0,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 3,
+   "cost_usd": 0.052,
+   "tokens": 43309,
+   "summary": "W1 and W3 had edits denied for going outside the project folder. W2's tests are blocked on the executor being mid-edit. AST names between W1 and W3 are not yet agreed.",
+   "next_in": 94,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 0,
+   "wake_on_events": false,
+   "min_gap_s": 45.0
+  }
+ }
+}

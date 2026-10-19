@@ -1,0 +1,38 @@
+{
+ "lane": "peers",
+ "n": "P1",
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video-24",
+ "seconds": 354,
+ "final": "151 of 154 checks pass",
+ "tokens": 5021832,
+ "questions": 38,
+ "jobs": [
+  [
+   1,
+   "Parser, lexer, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, foreign keys",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": null,
+ "verify_rounds": null,
+ "costs": null,
+ "note": "tokens: one folder counted once (the driver had summed three identical folder totals)"
+}

@@ -1,0 +1,44 @@
+{
+ "lane": "peers",
+ "n": "F1",
+ "task": "2",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": null,
+ "delay": 12.0,
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video-67",
+ "seconds": 823,
+ "final": "153 of 154 checks pass",
+ "tokens": 5612354,
+ "questions": 57,
+ "jobs": [
+  [
+   1,
+   "Parser, lexer, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, foreign keys",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": null,
+ "verify_rounds": null,
+ "costs": null
+}

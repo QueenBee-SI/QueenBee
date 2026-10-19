@@ -1,0 +1,69 @@
+{
+ "lane": "team",
+ "n": "H1016-0719-t3mix-1",
+ "task": "3",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 3,
+  "cost_usd": 0.038,
+  "tokens": 21354,
+  "summary": "W1 and W3 are done and passed acceptance. W2 is still working on its tests and has the AST shapes from W1. Nothing for me to coordinate right now.",
+  "next_in": 98,
+  "interval_s": 120.0,
+  "busy": false,
+  "wakes": 3,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video3-14",
+ "seconds": 245,
+ "final": "219 of 219 checks pass",
+ "tokens": 3970200,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Frontend: parser, AST, functions",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, database",
+   "done",
+   "codex",
+   "gpt-5.6-sol"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 24133,
+   "cost_usd": 0.1102815
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 21354,
+   "cost_usd": 0.0376
+  }
+ }
+}

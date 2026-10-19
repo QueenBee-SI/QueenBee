@@ -1,0 +1,77 @@
+{
+ "lane": "team",
+ "n": "BIG2",
+ "task": "23",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 5,
+  "cost_usd": 0.081,
+  "tokens": 40424,
+  "summary": "W3 is at 215/219. The 4 failures are in W1's parser (check 109) and W2's dml (checks 141, 144, 212), and both of them are marked done, so I sent each their fixes.",
+  "next_in": 0,
+  "interval_s": 120.0,
+  "busy": true,
+  "wakes": 6,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "delay": null,
+ "claude": "sonnet",
+ "codex": "gpt-5.6-terra",
+ "folder": "~/QueenBeeDemo/big-3",
+ "seconds": 493,
+ "final": "219 of 219 checks pass",
+ "tokens": 5754001,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Frontend: parser, lexer, exprs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, savepoints",
+   "done",
+   "codex",
+   "gpt-5.6-terra"
+  ],
+  [
+   3,
+   "Executor select side and docs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   4,
+   "integration fix 1",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 1,
+ "costs": {
+  "planner": {
+   "tokens": 28271,
+   "cost_usd": 0.1331149
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 40424,
+   "cost_usd": 0.0813
+  }
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "run_id": "H1016-0650-short-2",
+ "arm": "short",
+ "switches": {
+  "TASK": "2",
+  "BRIEF": "short",
+  "READ_SCOPE": "",
+  "INTERVAL": "",
+  "WAKE": "",
+  "LANE": "team",
+  "CLAUDE_MODEL": "sonnet",
+  "CODEX_MODEL": "gpt-5.6-sol",
+  "TEAM_AGENT": "claude"
+ },
+ "git_commit": "9cdcccfddbe5b1761bf6a2d2544540355883f6e5",
+ "git_clean": false,
+ "python": "3.11.9",
+ "platform": "Windows 10 AMD64",
+ "port": 7990,
+ "started_at": "2026-10-16T07:08:02",
+ "result": {
+  "lane": "team",
+  "n": "H1016-0650-short-2",
+  "task": "2",
+  "brief": "short",
+  "read_scope": "",
+  "interval": "",
+  "wake": "",
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 7,
+   "cost_usd": 0.095,
+   "tokens": 52662,
+   "summary": "W1-W3 are done and W4 is queued to fix the integration failure. Check 141 (view validation in dml._create_view) is already assigned to W2. Nothing new for me to add.",
+   "next_in": 68,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 8,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  },
+  "claude": "sonnet",
+  "codex": "gpt-5.6-sol",
+  "folder": "~/QueenBeeDemo/video-58",
+  "seconds": 603,
+  "final": "154 of 154 checks pass",
+  "tokens": 5330187,
+  "questions": 0,
+  "jobs": [
+   [
+    1,
+    "Parser, expressions, windows",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    2,
+    "Storage, DML, DDL, docs",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    3,
+    "Executor select side",
+    "done",
+    "claude",
+    "sonnet"
+   ],
+   [
+    4,
+    "integration fix 1",
+    "done",
+    "claude",
+    "sonnet"
+   ]
+  ],
+  "verify": "passed",
+  "verify_rounds": 1,
+  "costs": {
+   "planner": {
+    "tokens": 27815,
+    "cost_usd": 0.1268155
+   },
+   "architect": {
+    "tokens": 0,
+    "cost_usd": 0
+   },
+   "director": {
+    "tokens": 52662,
+    "cost_usd": 0.0953
+   }
+  }
+ },
+ "ended_at": "2026-10-16T07:19:15",
+ "invalid": "",
+ "logs": "runs/hermetic-logs/H1016-0650-short-2",
+ "wall_s": 673,
+ "headline": {
+  "seconds": 603,
+  "final": "154 of 154 checks pass",
+  "tokens": 5330187,
+  "questions": 0,
+  "verify_rounds": 1,
+  "director": {
+   "model": "sonnet",
+   "agent": "claude",
+   "looks": 7,
+   "cost_usd": 0.095,
+   "tokens": 52662,
+   "summary": "W1-W3 are done and W4 is queued to fix the integration failure. Check 141 (view validation in dml._create_view) is already assigned to W2. Nothing new for me to add.",
+   "next_in": 68,
+   "interval_s": 120.0,
+   "busy": false,
+   "wakes": 8,
+   "wake_on_events": true,
+   "min_gap_s": 45.0
+  }
+ }
+}

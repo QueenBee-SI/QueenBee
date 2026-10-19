@@ -1,0 +1,44 @@
+{
+ "lane": "peers",
+ "n": "BIG2",
+ "task": "23",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": null,
+ "delay": 1.0,
+ "claude": "sonnet",
+ "codex": "gpt-5.6-terra",
+ "folder": "~/QueenBeeDemo/big-4",
+ "seconds": 442,
+ "final": "219 of 219 checks pass",
+ "tokens": 7512880,
+ "questions": 47,
+ "jobs": [
+  [
+   1,
+   "Parser, lexer, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, foreign keys",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": null,
+ "verify_rounds": null,
+ "costs": null
+}

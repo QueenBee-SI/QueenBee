@@ -1,0 +1,51 @@
+{
+ "lane": "team",
+ "n": "B-full",
+ "brief": "full",
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video-26",
+ "seconds": 355,
+ "final": "154 of 154 checks pass",
+ "tokens": 5169031,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Lexer, parser, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, FKs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 27421,
+   "cost_usd": 0.1228515
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 14874,
+   "cost_usd": 0.0314
+  }
+ }
+}

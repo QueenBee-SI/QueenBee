@@ -1,0 +1,64 @@
+{
+ "lane": "team",
+ "n": "E1b-findings",
+ "brief": "findings",
+ "read_scope": "",
+ "interval": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 1,
+  "cost_usd": 0.019,
+  "tokens": 7495,
+  "summary": "W1 and W2 are done. W3 is still rewriting the executor, and the dml hook W2 needs is not wired yet, so I told W3 to do that first.",
+  "next_in": 235,
+  "interval_s": 300.0,
+  "busy": false
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video-31",
+ "seconds": 333,
+ "final": "154 of 154 checks pass",
+ "tokens": 4215547,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, lexer, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views, FKs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side and docs",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 27764,
+   "cost_usd": 0.12628150000000002
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 7495,
+   "cost_usd": 0.0191
+  }
+ }
+}

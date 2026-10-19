@@ -1,0 +1,71 @@
+{
+ "lane": "team",
+ "n": "E1-findings",
+ "brief": "findings",
+ "read_scope": "",
+ "interval": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 2,
+  "cost_usd": 0.03,
+  "tokens": 14322,
+  "summary": "W1 and W2 are done and passed acceptance. W3 has written executor.py and plan.py and is about to run checks, tests and docs. The interfaces agreed on the board (subquery callback, dml.execute, Storage",
+  "next_in": 108,
+  "interval_s": 120.0,
+  "busy": false
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~\\QueenBeeDemo\\video-28",
+ "seconds": 343,
+ "final": "154 of 154 checks pass",
+ "tokens": 5010575,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, views",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side, docs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   4,
+   "integration fix 1",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 1,
+ "costs": {
+  "planner": {
+   "tokens": 27566,
+   "cost_usd": 0.1242895
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 14322,
+   "cost_usd": 0.0299
+  }
+ }
+}

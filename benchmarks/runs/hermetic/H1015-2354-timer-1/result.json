@@ -1,0 +1,69 @@
+{
+ "lane": "team",
+ "n": "H1015-2354-timer-1",
+ "task": "2",
+ "brief": "findings",
+ "read_scope": "",
+ "interval": "",
+ "wake": "off",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 2,
+  "cost_usd": 0.04,
+  "tokens": 36621,
+  "summary": "W1 done and accepted; W2 finishing tests then docs; W3 has plan.py done and is starting the executor rewrite. The interfaces between them are agreed, and nothing is blocked.",
+  "next_in": 25,
+  "interval_s": 120.0,
+  "busy": false,
+  "wakes": 0,
+  "wake_on_events": false,
+  "min_gap_s": 45.0
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video-38",
+ "seconds": 309,
+ "final": "154 of 154 checks pass",
+ "tokens": 5825656,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Syntax, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, FKs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 0,
+ "costs": {
+  "planner": {
+   "tokens": 28075,
+   "cost_usd": 0.1294155
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 36621,
+   "cost_usd": 0.0398
+  }
+ }
+}

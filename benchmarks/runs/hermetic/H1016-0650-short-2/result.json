@@ -1,0 +1,76 @@
+{
+ "lane": "team",
+ "n": "H1016-0650-short-2",
+ "task": "2",
+ "brief": "short",
+ "read_scope": "",
+ "interval": "",
+ "wake": "",
+ "director": {
+  "model": "sonnet",
+  "agent": "claude",
+  "looks": 7,
+  "cost_usd": 0.095,
+  "tokens": 52662,
+  "summary": "W1-W3 are done and W4 is queued to fix the integration failure. Check 141 (view validation in dml._create_view) is already assigned to W2. Nothing new for me to add.",
+  "next_in": 68,
+  "interval_s": 120.0,
+  "busy": false,
+  "wakes": 8,
+  "wake_on_events": true,
+  "min_gap_s": 45.0
+ },
+ "claude": "sonnet",
+ "codex": "gpt-5.6-sol",
+ "folder": "~/QueenBeeDemo/video-58",
+ "seconds": 603,
+ "final": "154 of 154 checks pass",
+ "tokens": 5330187,
+ "questions": 0,
+ "jobs": [
+  [
+   1,
+   "Parser, expressions, windows",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   2,
+   "Storage, DML, DDL, docs",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   3,
+   "Executor select side",
+   "done",
+   "claude",
+   "sonnet"
+  ],
+  [
+   4,
+   "integration fix 1",
+   "done",
+   "claude",
+   "sonnet"
+  ]
+ ],
+ "verify": "passed",
+ "verify_rounds": 1,
+ "costs": {
+  "planner": {
+   "tokens": 27815,
+   "cost_usd": 0.1268155
+  },
+  "architect": {
+   "tokens": 0,
+   "cost_usd": 0
+  },
+  "director": {
+   "tokens": 52662,
+   "cost_usd": 0.0953
+  }
+ }
+}
