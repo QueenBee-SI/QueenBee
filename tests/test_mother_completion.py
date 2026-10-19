@@ -41,6 +41,27 @@ class Completion(unittest.TestCase):
         self.assertIn("2 answered by the queen, 1 left to the user", facts)
         self.assertIn("Delivery check (run by the queen) `python check.py`: failed; output: 2 checks failed", facts)
 
+    def test_the_result_card_is_a_few_lines_of_facts(self):
+        now = time.time()
+        self.q._cost = {"tokens": 4_339_462}
+        self.q.dispatch.verify = {"command": "python check.py", "state": "passed", "rounds": 1, "log": ""}
+        self.q.dispatch.jobs.append({"priority": 3, "kind": "task", "title": "integration", "status": "done",
+                                     "project_path": self.tmp.name, "agent": "claude", "tier": "sonnet",
+                                     "launched_at": now - 40, "events": [[now - 10, "done"]]})
+        card = self.q.result_card()
+        self.assertIn("**QueenBee run: build the thing**", card)
+        self.assertIn("- Check: `python check.py` passed", card)
+        self.assertIn("- Prompts to a person: 1", card)
+        self.assertIn("- Workers: Claude Code (sonnet), Codex (gpt)", card)       # the fix worker is counted as a fix
+        self.assertIn("- Integration fixes: 1", card)
+        self.assertIn("- Time: ", card)
+        self.assertIn("- Tokens: 4.34 M", card)
+        self.assertIn("github.com/QueenBee-SI/QueenBee", card)
+
+    def test_the_result_card_is_empty_before_any_worker(self):
+        self.q.dispatch.jobs.clear()
+        self.assertEqual(self.q.result_card(), "")
+
     def test_no_delivery_check_is_said_plainly(self):
         self.q.dispatch.verify = {}
         self.assertIn("Delivery check: none was set", self.q.completion_facts())

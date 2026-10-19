@@ -1381,6 +1381,40 @@ class Mother:
                          + (": " + ", ".join(f['path'] for f in c.get("files", [])[:25]) if c.get("files") else ""))
         return "\n".join(lines)
 
+    def result_card(self) -> str:
+        """The run's result as a few lines of Markdown to paste into a pull request or a post. Facts only, nothing from
+        the model: the queen's check, the prompts a person had to answer, the workers, the integration fixes, the time
+        and the tokens."""
+        d = self.dispatch
+        jobs = [j for j in (d.view() if d else []) if j.get("kind") == "task"]
+        if d is None or not jobs:
+            return ""
+        started = float(d.started_at or 0)
+        secs = max(0, int((self._finished_at(jobs) or time.time()) - started)) if started else 0
+        v = d.verify or {}
+        fixes = int(v.get("rounds") or 0)
+        workers = jobs[:-fixes] if 0 < fixes < len(jobs) else jobs        # the integration-fix workers come last
+        names = {"claude": "Claude Code", "codex": "Codex"}
+        who = [names.get(j.get("agent") or "", (j.get("agent") or "agent").title()) + (f" ({j['tier']})" if j.get("tier") else "")
+               for j in workers]
+        left = sum(1 for a in d.approvals if a.get("decision") == "left to you")
+        tokens = (self._cost or {}).get("tokens")
+        if v.get("command"):
+            check = f"`{v['command']}` " + str(v.get("state") or "not run")
+        else:
+            check = "none was set"
+        task = (((d.instruction or self.description or "").strip().splitlines() or [""])[0])[:100]
+        lines = ["**QueenBee run" + (f": {task}" if task else "") + "**",
+                 f"- Check: {check}",
+                 f"- Prompts to a person: {left}",
+                 f"- Workers: {', '.join(who)}",
+                 f"- Integration fixes: {fixes}",
+                 f"- Time: {secs // 60} min {secs % 60} s",
+                 f"- Tokens: {tokens / 1e6:.2f} M" if isinstance(tokens, (int, float)) and tokens else "- Tokens: not counted",
+                 "",
+                 "Built with [QueenBee](https://github.com/QueenBee-SI/QueenBee)"]
+        return "\n".join(lines)
+
     def _completion_view(self) -> Optional[dict[str, Any]]:
         """The completion report: written once, in the background, when the team has stopped; kept in the project."""
         d = self.dispatch
@@ -2548,6 +2582,9 @@ class Handler(BaseHTTPRequestHandler):
             return
         if path == "/api/findings" and mother is not None:
             self._send(json.dumps(mother.finding_records(), default=str).encode(), "application/json")
+            return
+        if path == "/api/card" and mother is not None:
+            self._send(json.dumps({"ok": True, "text": mother.result_card()}).encode(), "application/json")
             return
         if path == "/api/agents":
             from ..agents.catalog import survey

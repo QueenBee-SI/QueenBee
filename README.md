@@ -8,10 +8,11 @@
 
 <p align="center">
   <a href="https://github.com/QueenBee-SI/QueenBee/releases/latest"><b>Download</b></a> for Windows, macOS and Linux
-  &nbsp;·&nbsp; <a href="docs/install.md">Install guide</a>
-  &nbsp;·&nbsp; <a href="docs/tour.md">Tour of the screen</a>
-  &nbsp;·&nbsp; <a href="docs/assets/film/queenbee-film.mp4">Watch the film</a>
+  &nbsp;·&nbsp; <a href="docs/first-job.md"><b>Run your first job</b></a>
+  &nbsp;·&nbsp; <a href="docs/results.md"><b>See the evidence</b></a>
 </p>
+
+<p align="center">Uses your existing Claude Code and Codex sign-ins. Your code stays on your machine. No QueenBee account.</p>
 
 You already have coding agents. Claude Code in one terminal, Codex in another, each one asking you to approve a
 command every few minutes, and you are the person switching between windows to keep them going. QueenBee puts them on
@@ -26,7 +27,8 @@ them, or go and do something else.
 **It finishes the job.** You say what "done" means, usually a test command. When every worker is in, the queen runs
 it. If the parts do not meet, she sends one more worker to join them and runs it again. Her report keeps what she
 checked apart from what a worker merely said. On our test job, three agents side by side stopped one check short
-with every agent saying done; the queen's team ran the check and finished. [The numbers.](docs/results.md)
+with every agent saying done; the queen's team ran the check and finished. [The numbers.](docs/results.md) When a
+run ends, one click copies its result card (check, prompts, workers, fixes, time, tokens) for a pull request or a post.
 
 **Claude and Codex, one team.** Both work from the same brief on the same job, each on the part that suits it. Any agent
 installed on your computer can take any seat, including the queen's.
@@ -77,6 +79,7 @@ Everything stays on your computer. What it does not do yet is listed plainly in 
 ## Documentation
 
 - [Install guide](docs/install.md): Windows, macOS, Linux, from source, and what to do about the first-start warnings.
+- [Your first job in five minutes](docs/first-job.md), and [the film](docs/assets/film/queenbee-film.mp4) (1 min 51).
 - [Tour of the screen](docs/tour.md): the map, the terminals, the queen's panel, Decisions, Report.
 - [User guide](docs/user-guide.md): every button and setting.
 - [The demo, step by step](docs/free-demo.md).

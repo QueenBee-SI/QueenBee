@@ -115,7 +115,9 @@
         <button type="button" class="es-go" data-go="hive">Open the Hive</button>
       </section>
       <section class="card completion-card" id="completion-card" hidden>
-        <h2>The queen's completion report <span class="hint" id="completion-hint"></span></h2>
+        <h2>The queen's completion report <span class="hint" id="completion-hint"></span>
+          <button type="button" class="ghost small" id="card-copy" title="A few lines with the check, the prompts, the workers, the fixes, the time and the tokens, to paste into a pull request or a post">Copy the result card</button></h2>
+        <pre id="result-card" class="result-card" hidden></pre>
         <div id="completion-body"></div>
       </section>
       <section class="card report" id="report-card">

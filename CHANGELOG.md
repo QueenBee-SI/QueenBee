@@ -5,6 +5,10 @@
 - `docs/results.md`: what we measured (one agent alone, three side by side, three with the queen; the
   findings experiments; a Claude + Codex team), with the film's runs, and `benchmarks/` with the job, the drivers and
   every cited run's raw result, so the numbers can be rerun.
+- **The result card.** When a team has stopped, *Copy the result card* in the Report tab gives a few lines of
+  Markdown from the run's facts (the queen's check, prompts to a person, workers, integration fixes, time, tokens)
+  to paste into a pull request or a post. Also `GET /api/card?queen=<id>` on the local API.
+- `docs/first-job.md`: a real job in five minutes; the README's first screen now points there.
 
 ## v0.1.4 (2026-10-18)
 

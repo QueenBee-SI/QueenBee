@@ -941,3 +941,7 @@ select option, select optgroup { background: var(--surface-2); color: var(--ink)
 .finding-gone .finding { margin-top: 8px; }
 .finding-folder { color: var(--muted); font: 11px var(--mono); margin-top: 6px; }
 
+/* the result card */
+.completion-card h2 #card-copy { margin-left: 10px; vertical-align: middle; }
+.result-card { white-space: pre-wrap; font-size: 12px; line-height: 1.5; background: var(--surface-2); border: 1px solid var(--line-2);
+  border-radius: 6px; padding: 10px 12px; margin: 8px 0 12px; user-select: text; }

@@ -3624,3 +3624,30 @@ function renderNotices() {
   bellRows.sort((a, b) => b.row[0] - a.row[0]);
   renderBell();
 }
+
+/* ---- the result card: the run's facts as a few lines to paste anywhere ----------------------------------- */
+
+document.getElementById("card-copy").addEventListener("click", async () => {
+  const btn = document.getElementById("card-copy");
+  const pre = document.getElementById("result-card");
+  let text = "";
+  try {
+    const r = await fetch(`/api/card?queen=${encodeURIComponent(currentQueen)}`, { cache: "no-store" });
+    text = ((await r.json()).text || "").trim();
+  } catch { text = ""; }
+  pre.textContent = text || "The card is written from the run's facts once the team has stopped.";
+  pre.hidden = false;
+  let copied = false;
+  if (text) {
+    try { await navigator.clipboard.writeText(text); copied = true; } catch { copied = false; }
+  }
+  if (!copied && text) {
+    const range = document.createRange();
+    range.selectNodeContents(pre);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+  btn.textContent = copied ? "Copied" : "Copy the result card";
+  if (copied) setTimeout(() => { btn.textContent = "Copy the result card"; }, 2000);
+});

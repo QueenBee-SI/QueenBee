@@ -55,8 +55,8 @@ integration rounds over its valid runs. Needs `psutil`.
 ## Reading a result
 
 `seconds` is start to the end of the last worker, the waiting for answers inside it. `final` is the checker's last line.
-`questions` is the number of prompts a person (the stand-in) answered; the queen's team has none. `verify_rounds` is how
-many times the queen ran the check (1 means it passed first time; 2 means one integration fix). `tokens` is every
+`questions` is the number of prompts a person (the stand-in) answered; the queen's team has none. `verify_rounds` is the
+number of integration fixes the queen sent (0 means her check passed first time). `tokens` is every
 transcript's count plus the queen's own; `director` is the queen's looks and their cost; `costs` is per worker.
 
 The manifests record the Python version, platform, switches, start and end, and the commit of the development tree the
