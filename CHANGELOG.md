@@ -9,8 +9,7 @@
   Markdown from the run's facts (the queen's check, prompts to a person, workers, integration fixes, time, tokens)
   to paste into a pull request or a post. Also `GET /api/card?queen=<id>` on the local API.
 - `docs/first-job.md`: a real job in five minutes; the README's first screen now points there.
-- README: a twelve-second GIF of one real run on the first screen, the three-arm numbers with their caveats right
-  under it, Get started before anything else.
+- README: the three-arm numbers with their caveats right under the first screen, Get started before anything else.
 
 ## v0.1.4 (2026-10-18)
 

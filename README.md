@@ -20,10 +20,7 @@ one map, gives them one job, and puts a queen in charge: she splits the work, br
 prompts by a rule you can read, and runs your test at the end. You can watch every terminal live, type into any of
 them, or go and do something else.
 
-![One real run, six minutes in twelve seconds: the queen plans, three workers (two Claude Code, one Codex) build their parts, she sends one integration fix, and the whole project's check passes with 0 prompts to the person](docs/assets/queenbee-run.gif)
-
-*One real run, six minutes in twelve seconds: the queen plans, two Claude Code workers and one Codex worker build their
-parts, she sends one integration fix, and the project's own check passes. 30 permission prompts answered by the queen, 0 by you.*
+![Real runs, sped up: three projects on one map, each a Sonnet queen with a Codex worker and two Claude Haiku workers; the view closes in on one queen while her workers go from working to done and she delivers, then pulls back to the whole hive](docs/assets/queenbee-hive.gif)
 
 ## The same job three ways
 
@@ -73,8 +70,6 @@ whose file has changed since is marked as possibly out of date.
 
 **Every agent in one place.** Claude Code, Codex, Gemini CLI, Kimi, OpenCode, Cursor Agent, Mistral Vibe and Grok Build,
 each in a real terminal. One glance tells you who is working, who is done and who needs you.
-
-![Three projects on one map at once, sped up: each a queen with her workers; the view closes in on one queen as her workers finish and she delivers](docs/assets/queenbee-hive.gif)
 
 **Your tokens, in view and under a limit.** Every worker's use is counted as it works. Give a queen a budget and a number
 of workers at most, and she stops starting new work when she reaches it.
